@@ -1,4 +1,8 @@
-# Imports
+"""
+time imported to add time delays for print statements
+https://realpython.com/python-sleep/
+"""
+import time
 import colorama
 import emoji
 
