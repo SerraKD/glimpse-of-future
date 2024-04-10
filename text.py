@@ -40,6 +40,12 @@ def welcome():
     time.sleep(2)
     print("\nBut we can get to all that later.\n")
     time.sleep(3)
+
+
+def game_start():
+    """
+    Asks user if they want to start the game
+    """
     print("\nAre you ready? \U0001F9D9\n")
-    time.sleep(1)
-    print('\nIf so, please type in "yes".\n')
+    time.sleep(2)
+    print('\nIf so, please type in "yes" and press enter.\n')
