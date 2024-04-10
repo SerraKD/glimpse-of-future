@@ -13,9 +13,9 @@ def welcome():
     Welcomes user to the game and gives details about the game.
     """
     time.sleep(1)
-    print("\nWelcome to the Glimpse of the Future \U0001F52E\n")
+    print(Fore.MAGENTA + "\nWelcome to the Glimpse of the Future \U0001F52E\n")
     time.sleep(2)
-    print("With me, you can glance at your future\n")
+    print(Fore.BLUE + "With me, you can glance at your future\n")
     time.sleep(1)
     print("and see what's to come!\n")
     time.sleep(2)
@@ -41,12 +41,14 @@ def welcome():
     time.sleep(2)
     print("\nBut we can get to all that later.\n")
     time.sleep(3)
+    print(Style.RESET_ALL)
 
 
 def game_start():
     """
     Asks user if they want to start the game
     """
-    print("\nAre you ready? \U0001F9D9\n")
+    print(Fore.GREEN + "\nAre you ready? \U0001F9D9\n")
     time.sleep(2)
     print('\nIf so, please type in "yes" and press enter.\n')
+    print(Style.RESET_ALL)
