@@ -18,15 +18,16 @@ def game_start():
     """
     After the welcome message, asks user if they want to play the game.
     Checks the user answer if entered in correct method.
-    If answer is yes, moves on to picking a topic to get future predictions.
+    If answer is yes, moves on to getting user information.
     If user answers no, takes user back to welcome message.
     """
     text.game_start()
 
     while True:
-        answer = input(": ")
+        answer = input(" ").lower()
         if answer == "yes":
-            """#create function to continue with picking topic"""
+            """#clear terminal, add function to get user info"""
+            break
         elif answer == "no":
             """#create function to ask again if they are sure"""
         else:
