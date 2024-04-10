@@ -7,7 +7,7 @@ https://realpython.com/python-sleep/
 """
 import os
 import time
-import colorama
+from colorama import Fore, Back, Style
 import emoji
 import text
 

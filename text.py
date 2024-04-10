@@ -1,9 +1,10 @@
 """
 time imported to add time delays for print statements
 https://realpython.com/python-sleep/
+https://www.geeksforgeeks.org/print-colors-python-terminal/
 """
 import time
-import colorama
+from colorama import Fore, Back, Style
 import emoji
 
 
