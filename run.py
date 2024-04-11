@@ -30,6 +30,7 @@ def get_user_info():
     that is needed to proceed the game.
     """
     print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+    print("E.g. simba\n")
     while True:
         nickname = input(":")
         if nickname.isalpha():
@@ -38,6 +39,7 @@ def get_user_info():
             print(Fore.RED + '\n"That is not correct. Please try again."\n')
 
     print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+    print("E.g. 21\n")
     while True:
         age = input(":")
         if age.isdigit():
@@ -46,6 +48,7 @@ def get_user_info():
             print(Fore.RED + '\n"That is not correct. Please try again."\n')
 
     print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+    print("E.g. single, dating, married \n")
     while True:
         relationship = input(":")
         if relationship.isalpha():
