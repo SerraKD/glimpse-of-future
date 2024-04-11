@@ -52,6 +52,7 @@ def get_user_info():
             break
         else:
             print(Fore.RED + '\n"That is not correct. Please try again."\n')
+    return nickname, age, relationship
 
 
 def game_start():
