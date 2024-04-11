@@ -14,6 +14,14 @@ import text
 text.welcome()
 
 
+def clear_terminal():
+    """
+    os.system terminal cleaning fuction, clears text in terminal.
+    referance: https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def get_user_info():
     """
     Gets user input in correct form and collects user information
