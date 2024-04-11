@@ -74,13 +74,21 @@ def game_start():
             # ask user if they are sure saying no
             text.user_answer_no()
             text.game_start()
+            answer = input(" ").lower()
             if answer == "yes":
                 clear_terminal()
                 get_user_info()
                 break
-            # add else statatement same as below
+            elif answer == "no":
+                text.user_answer_final()
+                clear_terminal()
+                break
+            else:
+                print(Fore.RED + '\n"That is incorrect. Please try again."\n')
         else:
-            """#take back to welcome"""
+            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+            # take back to welcome
+            text.welcome()
 
 
 print(game_start())

@@ -63,3 +63,16 @@ def user_answer_no():
     print('\nI will give you one more chance..\n')
     time.sleep(2)
     print(Style.RESET_ALL)
+
+
+def user_answer_final():
+    """
+    If user insist on not playing game, prints text to say bye
+    """
+    print(Fore.RED + "\nI understand.\n")
+    time.sleep(2)
+    print("\nSome humans can't handle the great fear of the unknown.\n")
+    time.sleep(2)
+    print("\nIf you change your mind, you know where to find me.\U0001F609\n")
+    time.sleep(3)
+    print(Style.RESET_ALL)
