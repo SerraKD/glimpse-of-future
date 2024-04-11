@@ -14,6 +14,37 @@ import text
 text.welcome()
 
 
+def get_user_info():
+    """
+    Gets user input in correct form and collects user information
+    like nickname, age and relationship status
+    that is needed to proceed the game.
+    """
+    print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+    while True:
+        nickname = input(":")
+        if nickname.isalpha():
+            break
+        else:
+            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+
+    print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+    while True:
+        age = input(":")
+        if age.isdigit():
+            break
+        else:
+            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+
+    print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+    while True:
+        relationship = input(":")
+        if relationship.isalpha():
+            break
+        else:
+            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+
+
 def game_start():
     """
     After the welcome message, asks user if they want to play the game.
@@ -27,6 +58,7 @@ def game_start():
         answer = input(" ").lower()
         if answer == "yes":
             """#clear terminal, add function to get user info"""
+            get_user_info()
             break
         elif answer == "no":
             """#create function to ask again if they are sure"""
