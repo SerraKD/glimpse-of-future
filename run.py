@@ -92,3 +92,29 @@ def game_start():
 
 
 game_start()
+
+
+def select_topic():
+    """
+    Allows user to select a topic from 4 topics provided
+    to get future predictions. Depending on the collected
+    user data a prediction will be displayed.
+    """
+    clear_terminal()
+    text.topics()
+    while True:
+        topic = input(" ")
+        if topic == "1":
+            # add the health prediction
+            break
+        elif topic == "2":
+            # add the work prediction
+            break
+        elif topic == "3":
+            # add the Education prediction
+            break
+        elif topic == "4":
+            # add the relationship prediction
+            break
+        else:
+            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
