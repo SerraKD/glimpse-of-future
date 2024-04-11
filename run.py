@@ -107,15 +107,22 @@ def select_topic():
         topic = input(" ")
         if topic == "1":
             # add the health prediction
+            clear_terminal()
             break
         elif topic == "2":
             # add the work prediction
+            clear_terminal()
             break
         elif topic == "3":
             # add the Education prediction
+            clear_terminal()
             break
         elif topic == "4":
             # add the relationship prediction
+            clear_terminal()
             break
         else:
             print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+
+
+select_topic()

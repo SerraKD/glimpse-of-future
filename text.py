@@ -90,3 +90,5 @@ def topics():
     print("2. Work")
     print("3. Education")
     print("3. Relationship")
+    time.sleep(2)
+    print("\nType the number you selected and press enter.\n")
