@@ -66,6 +66,7 @@ def game_start():
         answer = input(" ").lower()
         if answer == "yes":
             """#clear terminal, add function to get user info"""
+            clear_terminal()
             get_user_info()
             break
         elif answer == "no":
