@@ -76,3 +76,17 @@ def user_answer_final():
     print("\nIf you change your mind, you know where to find me.\U0001F609\n")
     time.sleep(3)
     print(Style.RESET_ALL)
+
+
+def topics():
+    """
+    Gives user a list of topics to select to get future predictions.
+    """
+    print("\nThere is four different topics to focus on.\n")
+    time.sleep(1)
+    print("\nYou need to pick only one topic to get a prediction.\n")
+    time.sleep(2)
+    print("1. Health")
+    print("2. Work")
+    print("3. Education")
+    print("3. Relationship")

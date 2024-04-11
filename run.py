@@ -91,4 +91,4 @@ def game_start():
             text.welcome()
 
 
-print(game_start())
+game_start()
