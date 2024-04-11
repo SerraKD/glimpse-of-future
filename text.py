@@ -49,6 +49,17 @@ def game_start():
     Asks user if they want to start the game
     """
     print(Fore.GREEN + "\nAre you ready? \U0001F9D9\n")
-    time.sleep(2)
+    time.sleep(1)
     print('\nIf so, please type in "yes" and press enter.\n')
+    print(Style.RESET_ALL)
+
+
+def user_answer_no():
+    """
+    Asks user if they are sure to not start the game
+    """
+    print(Fore.RED + "\nHmm... I knew that you would say no. \U0001F9D9\n")
+    time.sleep(2)
+    print('\nI will give you one more chance..\n')
+    time.sleep(2)
     print(Style.RESET_ALL)

@@ -17,7 +17,8 @@ text.welcome()
 def clear_terminal():
     """
     os.system terminal cleaning fuction, clears text in terminal.
-    referance: https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+    referance:
+    https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -65,12 +66,19 @@ def game_start():
     while True:
         answer = input(" ").lower()
         if answer == "yes":
-            """#clear terminal, add function to get user info"""
+            # clear terminal, get user info
             clear_terminal()
             get_user_info()
             break
         elif answer == "no":
-            """#create function to ask again if they are sure"""
+            # ask user if they are sure saying no
+            text.user_answer_no()
+            text.game_start()
+            if answer == "yes":
+                clear_terminal()
+                get_user_info()
+                break
+            # add else statatement same as below
         else:
             """#take back to welcome"""
 
