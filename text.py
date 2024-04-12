@@ -97,7 +97,7 @@ def topics():
     print("1. Health \U0001F3E5")
     print("2. Work \U0001F4BC")
     print("3. Education \U0001F4DA")
-    print("3. Relationship \U0001F496")
+    print("4. Relationship \U0001F496")
     time.sleep(2)
     print("\nType the number you selected and press enter.\n")
 
