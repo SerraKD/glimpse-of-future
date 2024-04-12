@@ -161,7 +161,7 @@ def select_topic():
     while True:
         topic = input(" ")
         if topic == "1":
-            # add the health prediction
+            # health prediction
             clear_terminal()
             while True:
                 if user_age() <= 25:
@@ -180,7 +180,7 @@ def select_topic():
                     pass
             break
         elif topic == "2":
-            # add the work prediction
+            # Work prediction
             clear_terminal()
             while True:
                 if user_age() < 18:
@@ -199,11 +199,26 @@ def select_topic():
                     pass
             break
         elif topic == "3":
-            # add the Education prediction
+            # Education prediction
             clear_terminal()
+            while True:
+                if user_age() < 18:
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(18, 24):
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(24, 100):
+                    # create prediction
+                    get_more_topics()
+                    break
+                else:
+                    pass
             break
         elif topic == "4":
-            # add the relationship prediction
+            # relationship prediction
             clear_terminal()
             while True:
                 if user_age() <= 15 and user_rel() == "single":
