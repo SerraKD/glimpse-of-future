@@ -114,8 +114,6 @@ def game_start():
                 text.incorrect_input()
         else:
             text.incorrect_input()
-            # take back to welcome
-            text.welcome()
 
 
 game_start()
