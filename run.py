@@ -182,6 +182,21 @@ def select_topic():
         elif topic == "2":
             # add the work prediction
             clear_terminal()
+            while True:
+                if user_age() < 18:
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(18, 24):
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(24, 100):
+                    # create prediction
+                    get_more_topics()
+                    break
+                else:
+                    pass
             break
         elif topic == "3":
             # add the Education prediction
