@@ -119,6 +119,27 @@ def game_start():
 game_start()
 
 
+def get_more_topics():
+    """
+    Asks user if they want to know more. If answer is yes brings
+    them back to select topic. If they answer no, moves on to
+    thank you for playing.
+    """
+    text.know_more()
+    while True:
+        answer = input(" ").lower()
+        if answer == "yes":
+            clear_terminal()
+            select_topic()
+            break
+        elif answer == "no":
+            # add thank you for playing func
+            clear_terminal()
+            break
+        else:
+            text.incorrect_input()
+
+
 def select_topic():
     """
     Allows user to select a topic from 4 topics provided
@@ -135,12 +156,15 @@ def select_topic():
             while True:
                 if int(user_age()) <= 25:
                     text.health_1()
+                    get_more_topics()
                     break
                 elif int(user_age()) in range(25, 45):
                     text.health_2()
+                    get_more_topics()
                     break
                 elif int(user_age()) in range(45, 100):
                     text.health_3()
+                    get_more_topics()
                     break
                 else:
                     pass
