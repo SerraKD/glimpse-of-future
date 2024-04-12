@@ -57,6 +57,15 @@ def get_age():
     return age
 
 
+def user_age():
+    """
+    Gets the returned value of get age to pass it to
+    select topic function
+    """
+    age_input = get_age()
+    return age_input
+
+
 def get_relationship():
     """
     Gets user input for relationship status in correct form
@@ -88,9 +97,6 @@ def game_start():
         if answer == "yes":
             # clear terminal, get user info
             clear_terminal()
-            get_nickname()
-            get_age()
-            get_relationship()
             break
         elif answer == "no":
             # ask user if they are sure saying no
@@ -99,9 +105,6 @@ def game_start():
             answer = input(" ").lower()
             if answer == "yes":
                 clear_terminal()
-                get_nickname()
-                get_age()
-                get_relationship()
                 break
             elif answer == "no":
                 text.user_answer_final()
@@ -131,6 +134,18 @@ def select_topic():
         if topic == "1":
             # add the health prediction
             clear_terminal()
+            while True:
+                if int(user_age()) <= 25:
+                    text.health_1()
+                    break
+                elif int(user_age()) in range(25, 45):
+                    text.health_2()
+                    break
+                elif int(user_age()) in range(45, 100):
+                    text.health_3()
+                    break
+                else:
+                    pass
             break
         elif topic == "2":
             # add the work prediction
