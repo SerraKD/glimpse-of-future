@@ -99,6 +99,14 @@ def topics():
     print("\nType the number you selected and press enter.\n")
 
 
+def know_more():
+    """
+    After the first prediction, ask user if they want to know more.
+    """
+    print(Fore.YELLOW + "\nWould you like to know more?\U0001F4AD\n")
+    time.sleep(2)
+
+
 """
 #Topics
 """
