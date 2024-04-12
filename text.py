@@ -78,6 +78,11 @@ def user_answer_final():
     print(Style.RESET_ALL)
 
 
+def incorrect_input():
+    print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+    print(Style.RESET_ALL)
+
+
 def topics():
     """
     Gives user a list of topics to select to get future predictions.

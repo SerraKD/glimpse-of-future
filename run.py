@@ -36,7 +36,7 @@ def get_nickname():
         if nickname.isalpha():
             break
         else:
-            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+            text.incorrect_input()
     return nickname
 
 
@@ -53,7 +53,7 @@ def get_age():
         if age.isdigit():
             break
         else:
-            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+            text.incorrect_input()
     return age
 
 
@@ -111,9 +111,9 @@ def game_start():
                 clear_terminal()
                 break
             else:
-                print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+                text.incorrect_input()
         else:
-            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+            text.incorrect_input()
             # take back to welcome
             text.welcome()
 
@@ -160,7 +160,7 @@ def select_topic():
             clear_terminal()
             break
         else:
-            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+            text.incorrect_input()
 
 
 select_topic()
