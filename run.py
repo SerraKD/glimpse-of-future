@@ -190,6 +190,37 @@ def select_topic():
         elif topic == "4":
             # add the relationship prediction
             clear_terminal()
+            while True:
+                if user_age() <= 15 and user_rel() == "single":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(25, 45) and user_rel() == "single":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(25, 45) and user_rel() == "dating":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(25, 45) and user_rel() == "married":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(45, 100) and user_rel() == "single":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(45, 100) and user_rel() == "dating":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif user_age() in range(45, 100) and user_rel() == "married":
+                    # create prediction
+                    get_more_topics()
+                    break
+                else:
+                    pass
             break
         else:
             text.incorrect_input()
