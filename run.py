@@ -23,12 +23,12 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def get_user_info():
+def get_nickname():
     """
-    Gets user input in correct form and collects user information
-    like nickname, age and relationship status
-    that is needed to proceed the game.
+    Gets user input for nickname in correct form
+    and returns user information
     """
+
     print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
     print("E.g. simba\n")
     while True:
@@ -36,7 +36,15 @@ def get_user_info():
         if nickname.isalpha():
             break
         else:
-            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+            print(Fore.RED + '\n"That is incorrect. Please try again."\n')
+    return nickname
+
+
+def get_age():
+    """
+    Gets user input for age in correct form
+    and returns user information
+    """
 
     print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
     print("E.g. 21\n")
@@ -46,6 +54,14 @@ def get_user_info():
             break
         else:
             print(Fore.RED + '\n"That is not correct. Please try again."\n')
+    return age
+
+
+def get_relationship():
+    """
+    Gets user input for relationship status in correct form
+    and returns user information
+    """
 
     print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
     print("E.g. single, dating, married \n")
@@ -55,7 +71,7 @@ def get_user_info():
             break
         else:
             print(Fore.RED + '\n"That is not correct. Please try again."\n')
-    return nickname, age, relationship
+    return relationship
 
 
 def game_start():
@@ -72,7 +88,9 @@ def game_start():
         if answer == "yes":
             # clear terminal, get user info
             clear_terminal()
-            get_user_info()
+            get_nickname()
+            get_age()
+            get_relationship()
             break
         elif answer == "no":
             # ask user if they are sure saying no
@@ -81,7 +99,9 @@ def game_start():
             answer = input(" ").lower()
             if answer == "yes":
                 clear_terminal()
-                get_user_info()
+                get_nickname()
+                get_age()
+                get_relationship()
                 break
             elif answer == "no":
                 text.user_answer_final()
