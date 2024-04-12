@@ -79,6 +79,9 @@ def user_answer_final():
 
 
 def incorrect_input():
+    """
+    Lets user know that answer given is in incorrect format.
+    """
     print(Fore.RED + '\n"That is incorrect. Please try again."\n')
     print(Style.RESET_ALL)
 
@@ -104,7 +107,25 @@ def know_more():
     After the first prediction, ask user if they want to know more.
     """
     print(Fore.YELLOW + "\nWould you like to know more?\U0001F4AD\n")
+    time.sleep(1)
+    print('If so, please type in "yes" and press enter.\n')
+
+
+def game_end():
+    """
+    Displays end game text
+    """
+    print(Fore.MAGENTA + "\nIt was a pleasure meeting you.\n")
+    print("\nAnd thank you for letting me take a peek into your future.\n")
     time.sleep(2)
+    print("\nBut others need me now, \U0001F9D9\n")
+    time.sleep(1)
+    print("so I must go.\n")
+    time.sleep(2)
+    print("We will meet again.\n")
+    print("\n \U0001F441 \n")
+    time.sleep(3)
+    print(Style.RESET_ALL)
 
 
 """
