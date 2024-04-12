@@ -135,6 +135,7 @@ def get_more_topics():
         elif answer == "no":
             # add thank you for playing func
             clear_terminal()
+            text.game_end()
             break
         else:
             text.incorrect_input()
