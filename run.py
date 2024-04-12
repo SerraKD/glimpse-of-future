@@ -79,8 +79,17 @@ def get_relationship():
         if relationship.isalpha():
             break
         else:
-            print(Fore.RED + '\n"That is not correct. Please try again."\n')
+            text.incorrect_input()
     return relationship
+
+
+def user_relationship():
+    """
+    Gets the returned value of get relationship to pass it to
+    select topic function
+    """
+    relationship_input = get_relationship()
+    return relationship_input
 
 
 def game_start():
