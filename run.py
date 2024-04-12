@@ -54,7 +54,7 @@ def get_age():
             break
         else:
             text.incorrect_input()
-    return age
+    return int(age)
 
 
 def user_age():
@@ -83,7 +83,7 @@ def get_relationship():
     return relationship
 
 
-def user_relationship():
+def user_rel():
     """
     Gets the returned value of get relationship to pass it to
     select topic function
@@ -164,15 +164,15 @@ def select_topic():
             # add the health prediction
             clear_terminal()
             while True:
-                if int(user_age()) <= 25:
+                if user_age() <= 25:
                     text.health_1()
                     get_more_topics()
                     break
-                elif int(user_age()) in range(25, 45):
+                elif user_age() in range(25, 45):
                     text.health_2()
                     get_more_topics()
                     break
-                elif int(user_age()) in range(45, 100):
+                elif user_age() in range(45, 100):
                     text.health_3()
                     get_more_topics()
                     break
