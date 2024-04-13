@@ -157,22 +157,24 @@ def select_topic():
     user data a prediction will be displayed.
     """
     clear_terminal()
+
     text.topics()
     while True:
         topic = input(" ")
         if topic == "1":
             # health prediction
             clear_terminal()
+            age = user_age()
             while True:
-                if user_age() <= 25:
+                if age <= 25:
                     text.health_1()
                     get_more_topics()
                     break
-                elif user_age() in range(25, 45):
+                elif age in range(25, 45):
                     text.health_2()
                     get_more_topics()
                     break
-                elif user_age() in range(45, 100):
+                elif age in range(45, 100):
                     text.health_3()
                     get_more_topics()
                     break
@@ -182,16 +184,17 @@ def select_topic():
         elif topic == "2":
             # Work prediction
             clear_terminal()
+            age = user_age()
             while True:
-                if user_age() < 18:
+                if age < 18:
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(18, 24):
+                elif age in range(18, 24):
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(24, 100):
+                elif age in range(24, 100):
                     # create prediction
                     get_more_topics()
                     break
@@ -201,16 +204,17 @@ def select_topic():
         elif topic == "3":
             # Education prediction
             clear_terminal()
+            age = user_age()
             while True:
-                if user_age() < 18:
+                if age < 18:
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(18, 24):
+                elif age in range(18, 24):
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(24, 100):
+                elif age in range(24, 100):
                     # create prediction
                     get_more_topics()
                     break
@@ -220,32 +224,33 @@ def select_topic():
         elif topic == "4":
             # relationship prediction
             clear_terminal()
+            age = user_age()
             while True:
-                if user_age() <= 15 and user_rel() == "single":
+                if age <= 15 and user_rel() == "single":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(25, 45) and user_rel() == "single":
+                elif age in range(25, 45) and user_rel() == "single":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(25, 45) and user_rel() == "dating":
+                elif age in range(25, 45) and user_rel() == "dating":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(25, 45) and user_rel() == "married":
+                elif age in range(25, 45) and user_rel() == "married":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(45, 100) and user_rel() == "single":
+                elif age in range(45, 100) and user_rel() == "single":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(45, 100) and user_rel() == "dating":
+                elif age in range(45, 100) and user_rel() == "dating":
                     # create prediction
                     get_more_topics()
                     break
-                elif user_age() in range(45, 100) and user_rel() == "married":
+                elif age in range(45, 100) and user_rel() == "married":
                     # create prediction
                     get_more_topics()
                     break
