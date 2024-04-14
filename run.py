@@ -11,7 +11,7 @@ from colorama import Fore, Back, Style
 import emoji
 import text
 
-text.welcome()
+# text.welcome()
 
 
 def clear_terminal():
@@ -186,19 +186,20 @@ def select_topic():
             clear_terminal()
             age = user_age()
             while True:
-                if age < 18:
-                    # create prediction
+                if age <= 18:
+                    text.work_1()
                     get_more_topics()
                     break
                 elif age in range(18, 24):
-                    # create prediction
+                    text.work_2()
                     get_more_topics()
                     break
                 elif age in range(24, 100):
-                    # create prediction
+                    text.work_3()
                     get_more_topics()
                     break
                 else:
+                    # create not suitable for your age
                     pass
             break
         elif topic == "3":
