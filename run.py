@@ -231,35 +231,35 @@ def select_topic():
             rel = user_rel()
             while True:
                 if age in range(15, 19) and rel == "single":
-                    # create prediction
+                    text.relationship_1()
                     get_more_topics()
                     break
                 elif age in range(15, 19) and rel == "dating":
-                    # create prediction
+                    text.relationship_2()
                     get_more_topics()
                     break
                 elif age in range(19, 45) and rel == "single":
-                    # create prediction
+                    text.relationship_3()
                     get_more_topics()
                     break
                 elif age in range(19, 45) and rel == "dating":
-                    # create prediction
+                    text.relationship_4()
                     get_more_topics()
                     break
                 elif age in range(19, 45) and rel == "married":
-                    # create prediction
+                    text.relationship_5()
                     get_more_topics()
                     break
                 elif age in range(45, 100) and rel == "single":
-                    # create prediction
+                    text.relationship_6()
                     get_more_topics()
                     break
                 elif age in range(45, 100) and rel == "dating":
-                    # create prediction
+                    text.relationship_7()
                     get_more_topics()
                     break
                 elif age in range(45, 100) and rel == "married":
-                    # create prediction
+                    text.relationship_8()
                     get_more_topics()
                     break
                 else:
