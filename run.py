@@ -230,19 +230,23 @@ def select_topic():
             age = user_age()
             rel = user_rel()
             while True:
-                if age <= 15 and rel == "single":
+                if age in range(15, 19) and rel == "single":
                     # create prediction
                     get_more_topics()
                     break
-                elif age in range(25, 45) and rel == "single":
+                elif age in range(15, 19) and rel == "dating":
                     # create prediction
                     get_more_topics()
                     break
-                elif age in range(25, 45) and rel == "dating":
+                elif age in range(19, 45) and rel == "single":
                     # create prediction
                     get_more_topics()
                     break
-                elif age in range(25, 45) and rel == "married":
+                elif age in range(19, 45) and rel == "dating":
+                    # create prediction
+                    get_more_topics()
+                    break
+                elif age in range(19, 45) and rel == "married":
                     # create prediction
                     get_more_topics()
                     break
