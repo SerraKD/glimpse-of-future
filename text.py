@@ -194,3 +194,64 @@ def health_3():
     time.sleep(3)
     print("I foresee good health and lots of happiness for you.\n")
     time.sleep(1)
+
+
+def work_1():
+    """
+    Work future prediction text for age <=18
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nYou have a whole future ahead of you. \U000023F3\n")
+    time.sleep(2)
+    print("And, a lot of decisions are to be made.\n")
+    time.sleep(2)
+    print("\nBefore picking your profession, discover yourself.\n")
+    time.sleep(1)
+    print("Learn your strengths and weaknesses.\n")
+    time.sleep(2)
+    print("Remember that everyone is unique,\n")
+    time.sleep(2)
+    print("and decide what you will do with your future based on yourself,\n")
+    time.sleep(1)
+    print("not others.\n")
+    time.sleep(2)
+
+
+def work_2():
+    """
+    Work future prediction text for age in range(18, 24)
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nDon't worry. \U0001F60C\n")
+    time.sleep(2)
+    print("This is a difficult time for everyone.\n")
+    time.sleep(2)
+    print("\nIt's okay if you are not a hundred percent sure\n")
+    time.sleep(1)
+    print("about the path you have taken.\n")
+    time.sleep(2)
+    print("Work hard to get the results you want,\n")
+    time.sleep(1)
+    print("and if you are not pleased with the outcome,\n")
+    time.sleep(1)
+    print("Remember that change is a part of the life.\n")
+    time.sleep(2)
+
+
+def work_3():
+    """
+    Work future prediction text for age in range(24, 100)
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nI see lots of worries and as-ifs. \U0001F9D0\n")
+    time.sleep(2)
+    print("I know you are not hearing this enough,\n")
+    time.sleep(2)
+    print("so let me tell you that you are doing great.\n")
+    time.sleep(1)
+    print("\nGive yourself some slack, and appreciate your achievements.\n")
+    time.sleep(2)
+    print("You will get the desired results\n")
+    time.sleep(1)
+    print("when you continue with the hard work.\n")
+    time.sleep(2)
