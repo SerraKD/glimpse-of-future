@@ -179,6 +179,7 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
+                    # create not suitable for your age
                     pass
             break
         elif topic == "2":
@@ -208,18 +209,19 @@ def select_topic():
             age = user_age()
             while True:
                 if age < 18:
-                    # create prediction
+                    text.education_1()
                     get_more_topics()
                     break
                 elif age in range(18, 24):
-                    # create prediction
+                    text.education_2()
                     get_more_topics()
                     break
                 elif age in range(24, 100):
-                    # create prediction
+                    text.education_3()
                     get_more_topics()
                     break
                 else:
+                    # create not suitable for your age
                     pass
             break
         elif topic == "4":
@@ -257,6 +259,7 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
+                    # create not suitable for your age
                     pass
             break
         else:
