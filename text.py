@@ -255,3 +255,60 @@ def work_3():
     time.sleep(1)
     print("when you continue with the hard work.\n")
     time.sleep(2)
+
+
+def education_1():
+    """
+    Education future prediction text for age <=18
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nWorry less about the achievements \U0001F939\n")
+    time.sleep(2)
+    print("and try to focus on what needs to be done.\n")
+    time.sleep(2)
+    print("\nPlease don't compare yourself to others,\n")
+    time.sleep(1)
+    print("only get inspired by them.\n")
+    time.sleep(2)
+    print("Your grades do not determine your value,\n")
+    time.sleep(1)
+    print("your actions do.\n")
+    time.sleep(2)
+    print("Do your best, and you will fulfill your dreams.\n")
+    time.sleep(2)
+
+
+def education_2():
+    """
+    Education future prediction text for age in range(18, 24)
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nBig changes are ahead of you! \U0001F3C3\n")
+    time.sleep(2)
+    print("It's okay if you are anxious about what's to come.\n")
+    time.sleep(2)
+    print("\nYou are not alone in this journey!\n")
+    time.sleep(2)
+    print("I see great friendships will be made.\n")
+    time.sleep(1)
+    print("And you will learn a lot about yourself.\n")
+    time.sleep(1)
+    print("Things might get difficult, but you will persevere.\n")
+    time.sleep(2)
+
+
+def education_3():
+    """
+    Education future prediction text for age in range(24, 100)
+    """
+    time.sleep(1)
+    print(Fore.GREEN + "\nLearning doesn't stop at a particular age.\n")
+    time.sleep(2)
+    print("And you are no exception to that fact! \U0001F481\n")
+    time.sleep(2)
+    print("\nThis is the best time to finally take a step and\n")
+    time.sleep(1)
+    print("study that subject you always wanted.\n")
+    time.sleep(2)
+    print("You might be surprised how great it will turn out\n")
+    time.sleep(2)
