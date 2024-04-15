@@ -48,7 +48,7 @@ def game_start():
     """
     Asks user if they want to start the game
     """
-    print(Fore.GREEN + "\nAre you ready? \U0001F9D9\n")
+    print(Fore.CYAN + "\nAre you ready? \U0001F9D9\n")
     time.sleep(1)
     print('\nIf so, please type in "yes" and press enter.\n')
     print(Style.RESET_ALL)
@@ -61,7 +61,7 @@ def user_answer_no():
     print(Fore.RED + "\nHmm... I knew that you would say no. \U0001F9D9\n")
     time.sleep(2)
     print('\nI will give you one more chance..\n')
-    time.sleep(2)
+    time.sleep(1)
     print(Style.RESET_ALL)
 
 
@@ -90,7 +90,7 @@ def topics():
     """
     Gives user a list of topics to select to get future predictions.
     """
-    print("\nThere is four different topics to focus on.\n")
+    print(Fore.CYAN + "\nThere is four different topics to focus on.\n")
     time.sleep(1)
     print("\nYou need to pick only one topic to get a prediction.\n")
     time.sleep(2)
@@ -98,7 +98,7 @@ def topics():
     print("2. Work \U0001F4BC")
     print("3. Education \U0001F4DA")
     print("4. Relationship \U0001F496")
-    time.sleep(2)
+    time.sleep(1)
     print("\nType the number you selected and press enter.\n")
 
 
@@ -115,7 +115,7 @@ def not_for_you():
     """
     Informs user that selected topic is not suitable for their age
     """
-    print(Fore.YELLOW + "\nThis topic is not suitable for you.\n")
+    print(Fore.WHITE + "\nThis topic is not suitable for you.\n")
     time.sleep(1)
     print("\nTry to pick another one.\U0001F917\n")
     time.sleep(2)
@@ -135,7 +135,7 @@ def game_end():
     time.sleep(1)
     print("We will meet again.\n")
     print("\n \U0001F441 \n")
-    time.sleep(3)
+    time.sleep(2)
     print(Style.RESET_ALL)
 
 
@@ -210,7 +210,7 @@ def work_1():
     Work future prediction text for age <=18
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nYou have a whole future ahead of you. \U000023F3\n")
+    print(Fore.BLUE + "\nYou have a whole future ahead of you. \U000023F3\n")
     time.sleep(2)
     print("And, a lot of decisions are to be made.\n")
     time.sleep(2)
@@ -231,7 +231,7 @@ def work_2():
     Work future prediction text for age in range(18, 24)
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nDon't worry. \U0001F60C\n")
+    print(Fore.BLUE + "\nDon't worry. \U0001F60C\n")
     time.sleep(2)
     print("This is a difficult time for everyone.\n")
     time.sleep(2)
@@ -252,7 +252,7 @@ def work_3():
     Work future prediction text for age in range(24, 100)
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI see lots of worries and as-ifs. \U0001F9D0\n")
+    print(Fore.BLUE + "\nI see lots of worries and as-ifs. \U0001F9D0\n")
     time.sleep(2)
     print("I know you are not hearing this enough,\n")
     time.sleep(2)
@@ -271,7 +271,7 @@ def education_1():
     Education future prediction text for age <=18
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nWorry less about the achievements \U0001F939\n")
+    print(Fore.CYAN + "\nWorry less about the achievements \U0001F939\n")
     time.sleep(2)
     print("and try to focus on what needs to be done.\n")
     time.sleep(2)
@@ -292,7 +292,7 @@ def education_2():
     Education future prediction text for age in range(18, 24)
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nBig changes are ahead of you! \U0001F3C3\n")
+    print(Fore.CYAN + "\nBig changes are ahead of you! \U0001F3C3\n")
     time.sleep(2)
     print("It's okay if you are anxious about what's to come.\n")
     time.sleep(2)
@@ -311,7 +311,7 @@ def education_3():
     Education future prediction text for age in range(24, 100)
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nLearning doesn't stop at a particular age.\n")
+    print(Fore.CYAN + "\nLearning doesn't stop at a particular age.\n")
     time.sleep(2)
     print("And you are no exception to that fact! \U0001F481\n")
     time.sleep(2)
@@ -329,7 +329,7 @@ def relationship_1():
     #https://childmind.org/article/how-to-help-kids-have-good-romantic-relationships/
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nYou should love yourself first, \U0001FAC0\n")
+    print(Fore.WHITE + "\nYou should love yourself first, \U0001FAC0\n")
     time.sleep(2)
     print("and be your own person.\n")
     time.sleep(2)
@@ -349,7 +349,7 @@ def relationship_2():
     #https://childmind.org/article/how-to-help-kids-have-good-romantic-relationships/
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI see that you and your partner\n")
+    print(Fore.WHITE + "\nI see that you and your partner\n")
     time.sleep(1)
     print("love each other very much. \U0001F525\n")
     time.sleep(2)
@@ -370,7 +370,7 @@ def relationship_3():
     Relationship future prediction text for age range(19, 45) and single
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI foresee love is on the corner \U0001F496\n")
+    print(Fore.WHITE + "\nI foresee love is on the corner \U0001F496\n")
     time.sleep(2)
     print("You are just not paying attention.\n")
     time.sleep(2)
@@ -387,7 +387,7 @@ def relationship_4():
     Relationship future prediction text for age range(19, 45) and dating
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI see that you and your partner\n")
+    print(Fore.WHITE + "\nI see that you and your partner\n")
     time.sleep(2)
     print("love each other very much. \U0001F525\n")
     time.sleep(2)
@@ -406,7 +406,7 @@ def relationship_5():
     Relationship future prediction text for age range(19, 45) and married
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI think you will agree with me, when I say,\n")
+    print(Fore.WHITE + "\nI think you will agree with me, when I say,\n")
     time.sleep(2)
     print("marriage is not always easy. \U0001F9D0\n")
     time.sleep(2)
@@ -427,7 +427,7 @@ def relationship_6():
     Relationship future prediction text for age range(45, 100) and single
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nHmm.. A curious choice for you. \U0001F914\n")
+    print(Fore.WHITE + "\nHmm.. A curious choice for you. \U0001F914\n")
     time.sleep(2)
     print("I see that you worry about dating.\n")
     time.sleep(2)
@@ -444,7 +444,7 @@ def relationship_7():
     Relationship future prediction text for age range(45, 100) and dating
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI see you two are great together.\U0001F970\n")
+    print(Fore.WHITE + "\nI see you two are great together.\U0001F970\n")
     time.sleep(2)
     print("You know that relationships are hard work,\n")
     time.sleep(2)
@@ -461,7 +461,7 @@ def relationship_8():
     Relationship future prediction text for age range(45, 100) and married
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nI think you will agree with me, when I say,\n")
+    print(Fore.WHITE + "\nI think you will agree with me, when I say,\n")
     time.sleep(1)
     print("that marriage is not always easy. \U0001F9D0\n")
     time.sleep(1)
