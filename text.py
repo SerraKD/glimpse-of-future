@@ -111,6 +111,16 @@ def know_more():
     print('If so, please type in "yes" and press enter.\n')
 
 
+def not_for_you():
+    """
+    Informs user that selected topic is not suitable for their age
+    """
+    print(Fore.YELLOW + "\nThis topic is not suitable for you.\n")
+    time.sleep(1)
+    print("\nTry to pick another one.\U0001F917\n")
+    time.sleep(2)
+
+
 def game_end():
     """
     Displays end game text
