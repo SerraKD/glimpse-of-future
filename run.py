@@ -76,7 +76,7 @@ def get_relationship():
     print("E.g. single, dating, married \n")
     while True:
         relationship = input(":")
-        if relationship.isalpha():
+        if relationship in ["single", "dating", "married"]:
             break
         else:
             text.incorrect_input()
