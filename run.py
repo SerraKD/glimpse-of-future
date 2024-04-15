@@ -11,7 +11,7 @@ from colorama import Fore, Back, Style
 import emoji
 import text
 
-# text.welcome()
+text.welcome()
 
 
 def clear_terminal():
@@ -99,63 +99,6 @@ def user_rel():
     """
     relationship_input = get_relationship()
     return relationship_input
-
-
-def game_start():
-    """
-    After the welcome message, asks user if they want to play the game.
-    Checks the user answer if entered in correct method. If answer is yes,
-    moves on to selecting a topic. If user answers no, asks user if they
-    are sure. Again if answer is no, finish game.
-    """
-    text.game_start()
-
-    while True:
-        answer = input(" ").lower()
-        if answer == "yes":
-            clear_terminal()
-            break
-        elif answer == "no":
-            text.user_answer_no()
-            text.game_start()
-            answer = input(" ").lower()
-            if answer == "yes":
-                clear_terminal()
-                break
-            elif answer == "no":
-                text.user_answer_final()
-                clear_terminal()
-                break
-            else:
-                text.incorrect_input()
-        else:
-            text.incorrect_input()
-
-
-game_start()
-
-
-def get_more_topics():
-    """
-    Asks user if they want to know more. If answer is yes brings
-    them back to select topic. If they answer no, moves on to
-    thank you for playing.
-    """
-    text.know_more()
-    while True:
-        answer = input(" ").lower()
-        if answer == "yes":
-            clear_terminal()
-            select_topic()
-            break
-        elif answer == "no":
-            name = user_nickname()
-            clear_terminal()
-            print(f'{name},')
-            text.game_end()
-            break
-        else:
-            text.incorrect_input()
 
 
 def select_topic():
@@ -282,4 +225,63 @@ def select_topic():
             text.incorrect_input()
 
 
-select_topic()
+def get_more_topics():
+    """
+    Asks user if they want to know more. If answer is yes brings
+    them back to select topic. If they answer no, moves on to
+    thank you for playing.
+    """
+    text.know_more()
+    while True:
+        answer = input(" ").lower()
+        if answer == "yes":
+            clear_terminal()
+            select_topic()
+            break
+        elif answer == "no":
+            name = user_nickname()
+            clear_terminal()
+            print(f'{name},')
+            text.game_end()
+            break
+        else:
+            text.incorrect_input()
+
+
+def game_start():
+    """
+    After the welcome message, asks user if they want to play the game.
+    Checks the user answer if entered in correct method. If answer is yes,
+    moves on to selecting a topic. If user answers no, asks user if they
+    are sure. Again if answer is no, finish game.
+    """
+    text.game_start()
+
+    while True:
+        answer = input(" ").lower()
+        if answer == "yes":
+            clear_terminal()
+            select_topic()
+            break
+        elif answer == "no":
+            text.user_answer_no()
+            text.game_start()
+            answer = input(" ").lower()
+            while True:
+                if answer == "yes":
+                    clear_terminal()
+                    select_topic()
+                    break
+                elif answer == "no":
+                    text.user_answer_final()
+                    clear_terminal()
+                    break
+                else:
+                    text.incorrect_input()
+            return
+        else:
+            text.incorrect_input()
+
+
+clear_terminal()
+game_start()
