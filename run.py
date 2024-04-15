@@ -1,7 +1,5 @@
 """
-Imports:
-os imported for clearing the terminal
-https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+Imports
 """
 import os
 from colorama import Fore
@@ -29,8 +27,7 @@ def get_nickname():
         nickname = input(":")
         if nickname.isalpha():
             break
-        else:
-            text.incorrect_input()
+        text.incorrect_input()
     return nickname
 
 
@@ -55,8 +52,7 @@ def get_age():
         age = input(":")
         if age.isdigit():
             break
-        else:
-            text.incorrect_input()
+        text.incorrect_input()
     return int(age)
 
 
@@ -81,8 +77,7 @@ def get_relationship():
         relationship = input(":")
         if relationship in ["single", "dating", "married"]:
             break
-        else:
-            text.incorrect_input()
+        text.incorrect_input()
     return relationship
 
 
@@ -115,20 +110,19 @@ def select_topic():
                     text.health_1()
                     get_more_topics()
                     break
-                elif age in range(25, 45):
+                if age in range(25, 45):
                     text.health_2()
                     get_more_topics()
                     break
-                elif age in range(45, 100):
+                if age in range(45, 100):
                     text.health_3()
                     get_more_topics()
                     break
-                else:
-                    text.not_for_you()
-                    get_more_topics()
-                    break
+                text.not_for_you()
+                get_more_topics()
+                break
             break
-        elif topic == "2":
+        if topic == "2":
             # Work prediction
             clear_terminal()
             age = user_age()
@@ -137,20 +131,19 @@ def select_topic():
                     text.work_1()
                     get_more_topics()
                     break
-                elif age in range(18, 24):
+                if age in range(18, 24):
                     text.work_2()
                     get_more_topics()
                     break
-                elif age in range(24, 100):
+                if age in range(24, 100):
                     text.work_3()
                     get_more_topics()
                     break
-                else:
-                    text.not_for_you()
-                    get_more_topics()
-                    break
+                text.not_for_you()
+                get_more_topics()
+                break
             break
-        elif topic == "3":
+        if topic == "3":
             # Education prediction
             clear_terminal()
             age = user_age()
@@ -159,20 +152,19 @@ def select_topic():
                     text.education_1()
                     get_more_topics()
                     break
-                elif age in range(18, 24):
+                if age in range(18, 24):
                     text.education_2()
                     get_more_topics()
                     break
-                elif age in range(24, 100):
+                if age in range(24, 100):
                     text.education_3()
                     get_more_topics()
                     break
-                else:
-                    text.not_for_you()
-                    get_more_topics()
-                    break
+                text.not_for_you()
+                get_more_topics()
+                break
             break
-        elif topic == "4":
+        if topic == "4":
             # relationship prediction
             clear_terminal()
             age = user_age()
@@ -182,41 +174,39 @@ def select_topic():
                     text.relationship_1()
                     get_more_topics()
                     break
-                elif age in range(15, 19) and rel == "dating":
+                if age in range(15, 19) and rel == "dating":
                     text.relationship_2()
                     get_more_topics()
                     break
-                elif age in range(19, 45) and rel == "single":
+                if age in range(19, 45) and rel == "single":
                     text.relationship_3()
                     get_more_topics()
                     break
-                elif age in range(19, 45) and rel == "dating":
+                if age in range(19, 45) and rel == "dating":
                     text.relationship_4()
                     get_more_topics()
                     break
-                elif age in range(19, 45) and rel == "married":
+                if age in range(19, 45) and rel == "married":
                     text.relationship_5()
                     get_more_topics()
                     break
-                elif age in range(45, 100) and rel == "single":
+                if age in range(45, 100) and rel == "single":
                     text.relationship_6()
                     get_more_topics()
                     break
-                elif age in range(45, 100) and rel == "dating":
+                if age in range(45, 100) and rel == "dating":
                     text.relationship_7()
                     get_more_topics()
                     break
-                elif age in range(45, 100) and rel == "married":
+                if age in range(45, 100) and rel == "married":
                     text.relationship_8()
                     get_more_topics()
                     break
-                else:
-                    text.not_for_you()
-                    get_more_topics()
-                    break
+                text.not_for_you()
+                get_more_topics()
+                break
             break
-        else:
-            text.incorrect_input()
+        text.incorrect_input()
 
 
 def get_more_topics():
@@ -232,14 +222,14 @@ def get_more_topics():
             clear_terminal()
             select_topic()
             break
-        elif answer == "no":
+        if answer == "no":
             name = user_nickname()
             clear_terminal()
             print(f'{name},')
             text.game_end()
             break
-        else:
-            text.incorrect_input()
+
+        text.incorrect_input()
 
 
 def game_start():
@@ -257,7 +247,7 @@ def game_start():
             clear_terminal()
             select_topic()
             break
-        elif answer == "no":
+        if answer == "no":
             text.user_answer_no()
             text.game_start()
             answer = input(" ").lower()
@@ -266,15 +256,13 @@ def game_start():
                     clear_terminal()
                     select_topic()
                     break
-                elif answer == "no":
+                if answer == "no":
                     text.user_answer_final()
                     clear_terminal()
                     break
-                else:
-                    text.incorrect_input()
+                text.incorrect_input()
             return
-        else:
-            text.incorrect_input()
+        text.incorrect_input()
 
 
 if __name__ == "__main__":
