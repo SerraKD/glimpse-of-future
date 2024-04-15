@@ -90,11 +90,129 @@ def user_rel():
     return relationship_input
 
 
+def health_predictions():
+    """
+    Depending on the collected user data a health prediction will be displayed.
+    """
+    clear_terminal()
+    age = user_age()
+    while True:
+        if age <= 25:
+            text.health_1()
+            get_more_topics()
+            break
+        if age in range(25, 45):
+            text.health_2()
+            get_more_topics()
+            break
+        if age in range(45, 100):
+            text.health_3()
+            get_more_topics()
+            break
+        text.not_for_you()
+        get_more_topics()
+        break
+
+
+def work_predictions():
+    """
+    Depending on the collected user data a work prediction will be displayed.
+    """
+    clear_terminal()
+    age = user_age()
+    while True:
+        if age <= 18:
+            text.work_1()
+            get_more_topics()
+            break
+        if age in range(18, 24):
+            text.work_2()
+            get_more_topics()
+            break
+        if age in range(24, 100):
+            text.work_3()
+            get_more_topics()
+            break
+        text.not_for_you()
+        get_more_topics()
+        break
+
+
+def education_predictions():
+    """
+    Depending on the collected user data an education
+    prediction will be displayed.
+    """
+    clear_terminal()
+    age = user_age()
+    while True:
+        if age < 18:
+            text.education_1()
+            get_more_topics()
+            break
+        if age in range(18, 24):
+            text.education_2()
+            get_more_topics()
+            break
+        if age in range(24, 100):
+            text.education_3()
+            get_more_topics()
+            break
+        text.not_for_you()
+        get_more_topics()
+        break
+
+
+def relationship_predictions():
+    """
+    Depending on the collected user data a relationship
+    prediction will be displayed.
+    """
+    clear_terminal()
+    age = user_age()
+    rel = user_rel()
+    while True:
+        if age in range(15, 19) and rel == "single":
+            text.relationship_1()
+            get_more_topics()
+            break
+        if age in range(15, 19) and rel == "dating":
+            text.relationship_2()
+            get_more_topics()
+            break
+        if age in range(19, 45) and rel == "single":
+            text.relationship_3()
+            get_more_topics()
+            break
+        if age in range(19, 45) and rel == "dating":
+            text.relationship_4()
+            get_more_topics()
+            break
+        if age in range(19, 45) and rel == "married":
+            text.relationship_5()
+            get_more_topics()
+            break
+        if age in range(45, 100) and rel == "single":
+            text.relationship_6()
+            get_more_topics()
+            break
+        if age in range(45, 100) and rel == "dating":
+            text.relationship_7()
+            get_more_topics()
+            break
+        if age in range(45, 100) and rel == "married":
+            text.relationship_8()
+            get_more_topics()
+            break
+        text.not_for_you()
+        get_more_topics()
+        break
+
+
 def select_topic():
     """
     Allows user to select a topic from 4 topics provided
-    to get future predictions. Depending on the collected
-    user data a prediction will be displayed.
+    to get future predictions.
     """
     clear_terminal()
 
@@ -102,109 +220,16 @@ def select_topic():
     while True:
         topic = input(" ")
         if topic == "1":
-            # health prediction
-            clear_terminal()
-            age = user_age()
-            while True:
-                if age <= 25:
-                    text.health_1()
-                    get_more_topics()
-                    break
-                if age in range(25, 45):
-                    text.health_2()
-                    get_more_topics()
-                    break
-                if age in range(45, 100):
-                    text.health_3()
-                    get_more_topics()
-                    break
-                text.not_for_you()
-                get_more_topics()
-                break
+            health_predictions()
             break
         if topic == "2":
-            # Work prediction
-            clear_terminal()
-            age = user_age()
-            while True:
-                if age <= 18:
-                    text.work_1()
-                    get_more_topics()
-                    break
-                if age in range(18, 24):
-                    text.work_2()
-                    get_more_topics()
-                    break
-                if age in range(24, 100):
-                    text.work_3()
-                    get_more_topics()
-                    break
-                text.not_for_you()
-                get_more_topics()
-                break
+            work_predictions()
             break
         if topic == "3":
-            # Education prediction
-            clear_terminal()
-            age = user_age()
-            while True:
-                if age < 18:
-                    text.education_1()
-                    get_more_topics()
-                    break
-                if age in range(18, 24):
-                    text.education_2()
-                    get_more_topics()
-                    break
-                if age in range(24, 100):
-                    text.education_3()
-                    get_more_topics()
-                    break
-                text.not_for_you()
-                get_more_topics()
-                break
+            education_predictions()
             break
         if topic == "4":
-            # relationship prediction
-            clear_terminal()
-            age = user_age()
-            rel = user_rel()
-            while True:
-                if age in range(15, 19) and rel == "single":
-                    text.relationship_1()
-                    get_more_topics()
-                    break
-                if age in range(15, 19) and rel == "dating":
-                    text.relationship_2()
-                    get_more_topics()
-                    break
-                if age in range(19, 45) and rel == "single":
-                    text.relationship_3()
-                    get_more_topics()
-                    break
-                if age in range(19, 45) and rel == "dating":
-                    text.relationship_4()
-                    get_more_topics()
-                    break
-                if age in range(19, 45) and rel == "married":
-                    text.relationship_5()
-                    get_more_topics()
-                    break
-                if age in range(45, 100) and rel == "single":
-                    text.relationship_6()
-                    get_more_topics()
-                    break
-                if age in range(45, 100) and rel == "dating":
-                    text.relationship_7()
-                    get_more_topics()
-                    break
-                if age in range(45, 100) and rel == "married":
-                    text.relationship_8()
-                    get_more_topics()
-                    break
-                text.not_for_you()
-                get_more_topics()
-                break
+            relationship_predictions()
             break
         text.incorrect_input()
 
