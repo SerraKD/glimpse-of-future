@@ -12,9 +12,11 @@ def welcome():
     Welcomes user to the game and gives details about the game.
     """
     time.sleep(1)
-    print(Fore.MAGENTA + "\nWelcome to the Glimpse of the Future \U0001F52E\n")
+    print(Fore.MAGENTA + Style.BRIGHT +
+          "\nWelcome to the Glimpse of the Future \U0001F52E\n")
     time.sleep(2)
-    print(Fore.BLUE + "With me, you can glance at your future\n")
+    print(Fore.BLUE + Style.BRIGHT +
+          "\nWith me, you can glance at your future\n")
     time.sleep(1)
     print("and see what's to come!\n")
     time.sleep(2)
@@ -47,7 +49,7 @@ def game_start():
     """
     Asks user if they want to start the game
     """
-    print(Fore.CYAN + "\nAre you ready? \U0001F9D9\n")
+    print(Fore.CYAN + Style.BRIGHT + "\nAre you ready? \U0001F9D9\n")
     time.sleep(1)
     print('\nIf so, please type in "yes" and press enter.\n')
     print(Style.RESET_ALL)
@@ -89,7 +91,8 @@ def topics():
     """
     Gives user a list of topics to select to get future predictions.
     """
-    print(Fore.CYAN + "\nThere is four different topics to focus on.\n")
+    print(Fore.CYAN + Style.BRIGHT +
+          "\nThere is four different topics to focus on.\n")
     time.sleep(1)
     print("\nYou need to pick only one topic to get a prediction.\n")
     time.sleep(2)
@@ -146,7 +149,8 @@ def health_1():
     Health future prediction text for age <=25
     """
     time.sleep(1)
-    print(Fore.GREEN + "\nYou are young, wild, and free. \U0001F57A\n")
+    print(Fore.GREEN + Style.BRIGHT +
+          "\nYou are young, wild, and free. \U0001F57A\n")
     time.sleep(2)
     print("But you will not stay that way forever!\n")
     time.sleep(2)
@@ -209,7 +213,8 @@ def work_1():
     Work future prediction text for age <=18
     """
     time.sleep(1)
-    print(Fore.BLUE + "\nYou have a whole future ahead of you. \U000023F3\n")
+    print(Fore.BLUE + Style.BRIGHT +
+          "\nYou have a whole future ahead of you. \U000023F3\n")
     time.sleep(2)
     print("And, a lot of decisions are to be made.\n")
     time.sleep(2)
@@ -270,7 +275,8 @@ def education_1():
     Education future prediction text for age <=18
     """
     time.sleep(1)
-    print(Fore.CYAN + "\nWorry less about the achievements \U0001F939\n")
+    print(Fore.CYAN + Style.BRIGHT +
+          "\nWorry less about the achievements \U0001F939\n")
     time.sleep(2)
     print("and try to focus on what needs to be done.\n")
     time.sleep(2)
