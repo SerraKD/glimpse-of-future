@@ -265,7 +265,6 @@ def game_start():
     are sure. Again if answer is no, finish game.
     """
     text.game_start()
-
     while True:
         answer = input(" ").lower()
         if answer == "yes":
@@ -276,18 +275,17 @@ def game_start():
             text.user_answer_no()
             text.game_start()
             answer = input(" ").lower()
-            while True:
-                if answer == "yes":
-                    clear_terminal()
-                    select_topic()
-                    break
-                if answer == "no":
-                    text.user_answer_final()
-                    clear_terminal()
-                    break
-                text.incorrect_input()
-            return
-        text.incorrect_input()
+            if answer == "yes":
+                clear_terminal()
+                select_topic()
+                break
+            if answer == "no":
+                text.user_answer_final()
+                clear_terminal()
+                break
+            text.incorrect_input()
+        else:
+            text.incorrect_input()
 
 
 if __name__ == "__main__":
