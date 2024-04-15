@@ -4,8 +4,7 @@ https://realpython.com/python-sleep/
 https://www.geeksforgeeks.org/print-colors-python-terminal/
 """
 import time
-from colorama import Fore, Back, Style
-import emoji
+from colorama import Fore, Style
 
 
 def welcome():
