@@ -2,16 +2,10 @@
 Imports:
 os imported for clearing the terminal
 https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
-time imported to add time delays for print statements
-https://realpython.com/python-sleep/
 """
 import os
-import time
-from colorama import Fore, Back, Style
-import emoji
+from colorama import Fore
 import text
-
-text.welcome()
 
 
 def clear_terminal():
@@ -283,5 +277,6 @@ def game_start():
             text.incorrect_input()
 
 
-clear_terminal()
-game_start()
+if __name__ == "__main__":
+    text.welcome()
+    game_start()
