@@ -179,8 +179,9 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
-                    # create not suitable for your age
-                    pass
+                    text.not_for_you()
+                    get_more_topics()
+                    break
             break
         elif topic == "2":
             # Work prediction
@@ -200,8 +201,9 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
-                    # create not suitable for your age
-                    pass
+                    text.not_for_you()
+                    get_more_topics()
+                    break
             break
         elif topic == "3":
             # Education prediction
@@ -221,8 +223,9 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
-                    # create not suitable for your age
-                    pass
+                    text.not_for_you()
+                    get_more_topics()
+                    break
             break
         elif topic == "4":
             # relationship prediction
@@ -263,8 +266,9 @@ def select_topic():
                     get_more_topics()
                     break
                 else:
-                    # create not suitable for your age
-                    pass
+                    text.not_for_you()
+                    get_more_topics()
+                    break
             break
         else:
             text.incorrect_input()
