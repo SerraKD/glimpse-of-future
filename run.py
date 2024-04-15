@@ -104,20 +104,18 @@ def user_rel():
 def game_start():
     """
     After the welcome message, asks user if they want to play the game.
-    Checks the user answer if entered in correct method.
-    If answer is yes, moves on to getting user information.
-    If user answers no, takes user back to welcome message.
+    Checks the user answer if entered in correct method. If answer is yes,
+    moves on to selecting a topic. If user answers no, asks user if they
+    are sure. Again if answer is no, finish game.
     """
     text.game_start()
 
     while True:
         answer = input(" ").lower()
         if answer == "yes":
-            # clear terminal, get user info
             clear_terminal()
             break
         elif answer == "no":
-            # ask user if they are sure saying no
             text.user_answer_no()
             text.game_start()
             answer = input(" ").lower()
