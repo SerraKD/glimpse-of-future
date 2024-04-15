@@ -40,6 +40,15 @@ def get_nickname():
     return nickname
 
 
+def user_nickname():
+    """
+    Gets the returned value of get nickname to pass it to
+    end game function
+    """
+    name_input = get_nickname()
+    return name_input
+
+
 def get_age():
     """
     Gets user input for age in correct form
@@ -142,8 +151,9 @@ def get_more_topics():
             select_topic()
             break
         elif answer == "no":
-            # add thank you for playing func
+            name = user_nickname()
             clear_terminal()
+            print(f'{name},')
             text.game_end()
             break
         else:
