@@ -246,6 +246,12 @@ I would like to get additional user data like gender, and interests, and create 
 
 ## Remaining Bugs
 
+- Users can input a message before the prompt.
+
+Unfortunately, I couldn't work on this bug but I added an exclusive text to the welcome screen to inform the user to wait for a prompt.
+
+![Image of wait for a prompt to input text]()
+
 # Deployment
 
 # Deployment to Heroku
