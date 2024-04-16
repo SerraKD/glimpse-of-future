@@ -245,6 +245,42 @@ I would like to get additional user data like gender, and interests, and create 
 
 ## Fixed Bugs
 
+> 1. " Make get age functions return value integer to avoid repetition" [main d7117d8]
+
+- Otherwise i had to repeat in select topic function loops.
+
+> 2. " Fix the typo in topics function in text.py" [main 3daa1a5]
+
+- I called relationship topic number 3. Would confuse the user when selecting a topic. I fixed the text as 4.
+
+> 3. " Fix the function call for age in select topic, use returned value instead" [main a7eb663]
+
+- I was calling the user_age() function in the if and all the elif blocks in select_topic. So function was being called again for each check. I called the function once and stored the return value. (Credits John from Tutor Assistance)
+
+> 4. " Fix the age range for relationships in select topic function" [main bfaa4cc]
+
+- There was a gap in if-elif loops for age, making it miss a couple of age ranges. I fixed the error by rearranging the range.
+
+> 5. " Fix the code for get relationship functions user input validation by adding list" [main d4a2c7c]
+
+- The get relationship function was validating user input by checking if the entered answer is alphabetical. By adding a list of accepted answers in the if loop I ensured that only the correct answer will make the game proceed.
+
+> 6. " Fix the code for game start function, rearrange the calling of the select topic and game start functions" [main c48881b]
+
+- Because of the calling of the select topic function, even if the user says no to continue playing game was proceeding with giving the user options to select a topic. By moving the game start function under the select topic function I managed to prevent unwanted loops. I also added another while true to to nested loop to make sure the function behaves as expected.
+
+> 7. " Add style bright to texts in text.py" [main 96cfb72]
+
+- There was a bug in Heroku causing the colorama text colors to seem darker than the terminal in Gitpod. I added a bright style to ensure that the text is easily readable.
+
+> 8. " Refactor all if else statements with Pylint in run.py" [main 4663398]
+
+- Because all if-else statemens had breaks, I removed unnecessary elif and else statements for cleaner code.
+
+> 9. " Fix the code for game start function, make input validation work correctly" [main ae5d6bc]
+
+- After adding changes to if-else statements with Pylint, I found a new bug in the game start functions input validation. When a user enters incorrect answer, it creates an infinite loop. By removing the secondary while statement, adding the else statement, and correcting the indentation I fixed the error.
+
 ## Remaining Bugs
 
 - Users can input a message before the prompt.
