@@ -50,6 +50,7 @@ There are four different topics users can select to get predictions: Health, Wor
   - [os](#os)
   - [time](#time)
   - [colorama](#colorama)
+- [Emoji](#emoji)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
 
@@ -134,9 +135,6 @@ Any invalid input returns an error message and asks to try again.
 ![Image of invalid input text]()
 
 > In the flow chart, all user inputs are asked right after the welcome text. While writing the code I changed that into asking the input whenever it was needed because it logically made more sense and seemed more suitable to the game.
-
-> In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
-> Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
 
 #### Age
 
@@ -236,6 +234,9 @@ I would like to get additional user data like gender, and interests, and create 
 
 # Data Model
 
+> In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
+> Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
+
 # Testing
 
 ## Manual Testing
@@ -270,9 +271,31 @@ I deployed the website in early stages of develepment on [GitHub](https://github
 
 ## os
 
+- os used to clear text in terminal.
+
+- https://docs.python.org/3/library/os.html
+
 ## time
 
+- Time is used to add delays to texts.
+
+- https://www.geeksforgeeks.org/sleep-in-python/?ref=lbp
+
 ## colorama
+
+- Colorama Fore and Style is used to add different colors to text in terminal.
+
+- https://pypi.org/project/colorama/
+
+# Emoji
+
+- Emojis are used to make texts more interesting and give users a fun experience.
+
+- Importing emoji was not necessary because I used Unicodes.
+
+- Unicodes taken from : https://unicode.org/emoji/charts/full-emoji-list.html
+
+- https://pypi.org/project/emoji/
 
 # Credits
 
@@ -288,11 +311,7 @@ I deployed the website in early stages of develepment on [GitHub](https://github
   > Below documents and sites were used as study and reference material.
 
 - https://www.geeksforgeeks.org/print-colors-python-terminal/
-- https://pypi.org/project/colorama/
-- https://pypi.org/project/emoji/
 - https://www.geeksforgeeks.org/python-program-to-print-emojis/
-- https://unicode.org/emoji/charts/full-emoji-list.html
-- https://www.geeksforgeeks.org/python-time-module/
 - https://www.geeksforgeeks.org/python-check-if-given-string-is-numeric-or-not/?ref=header_search
 - https://stackoverflow.com/questions/74662334/using-user-input-function-in-classes
 - https://www.tutorialspoint.com/how-do-i-call-a-variable-from-another-function-in-python#:~:text=To%20summarize%2C%20when%20it%20comes,requirements%20of%20the%20specific%20scenario.
