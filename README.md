@@ -1,5 +1,15 @@
 # Glimpse of the Future
 
+The Glimpse of the Future is a Python based text game, deployed with a mock terminal provided by Code Institute, using Heroku.
+
+The main inspirations for this game are Fortune Tellers and Magic 8 ball.
+
+There are four different topics users can select to get predictions: Health, Work, Education, and Relationship. The game requires the user's age and relationship status to provide relevant future predictions. Depending on the collected data, a prediction is displayed and users are given a chance to select another topic. If the user chooses not to continue playing, the game asks for the user's nickname and farewell the user with the input provided.
+
+[Visit the deployed version](https://glimpse-of-future-18938565c6a2.herokuapp.com/)
+
+![Image of welcome screen]()
+
 ## Table Of Contents
 
 - [Glimpse of the Future](#glimpse-of-the-future)
