@@ -289,3 +289,6 @@ Unfortunately, I couldn't work on this bug but I added an exclusive text to the 
 - https://www.geeksforgeeks.org/python-string-lower/?ref=header_search
 
 # Acknowledgements
+
+- I am deeply grateful to my Mentor Rory Patrick Sheridan, for his invaluable guidance, support, and great tips.
+- Special thanks to John from Tutor Assistance for his help and great explanation.
