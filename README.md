@@ -51,7 +51,33 @@ There are four different topics users can select to get predictions: Health, Wor
 
 ## Flow Chart
 
+In the planning stage, I used [LucidChart](https://www.lucidchart.com/pages/) to create main logic flow of the game. The final version of the application has a few differences, such as when the game asks for user input or how the game reacts to those inputs. I mentioned it in more detail in the [User Input](#user-input) section.
+
+![Image of Flow Chart]()
+
 ## User Experience (UX)
+
+### Site Goals
+
+- Give clear instructions about how to play the game.
+- Get and validate the input appropriately.
+- Create curiosity with the intro to get users' attention.
+- Play the game smoothly and effortlessly.
+- Provide future predictions that feel particular to the user.
+
+### Target Audiences
+
+- Individuals who have interest in fortune tellers.
+- Individuals who are at the age to have an interest in provided topics.
+
+### User Stories
+
+As a user, i want to;
+
+- Have a clear understanding of how to play the game.
+- Get direct instructions for the inputs.
+- Get predictions that are suitable for my personal details.
+- Have a smooth experience.
 
 # How To Play
 
