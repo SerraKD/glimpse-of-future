@@ -260,4 +260,26 @@ I would like to get additional user data like gender, and interests, and create 
 
 # Credits
 
+- All content is written by me.
+- https://childmind.org/article/how-to-help-kids-have-good-romantic-relationships/ Used as a reference to create appropriate relationship advice for teens.
+- [LucidChart](https://www.lucidchart.com/pages/) used to create game flow chart.
+- [Grammarly](https://app.grammarly.com/) Used to check the grammar of all text content.
+- [Tiny PNG](https://tinypng.com/) used for file compression.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) used for validator testing.
+- The Heroku mock terminal is provided by [Code Institute](https://codeinstitute.net/global/).
+- Clear terminal function is taken from https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python
+
+  > Below documents and sites were used as study and reference material.
+
+- https://www.geeksforgeeks.org/print-colors-python-terminal/
+- https://pypi.org/project/colorama/
+- https://pypi.org/project/emoji/
+- https://www.geeksforgeeks.org/python-program-to-print-emojis/
+- https://unicode.org/emoji/charts/full-emoji-list.html
+- https://www.geeksforgeeks.org/python-time-module/
+- https://www.geeksforgeeks.org/python-check-if-given-string-is-numeric-or-not/?ref=header_search
+- https://stackoverflow.com/questions/74662334/using-user-input-function-in-classes
+- https://www.tutorialspoint.com/how-do-i-call-a-variable-from-another-function-in-python#:~:text=To%20summarize%2C%20when%20it%20comes,requirements%20of%20the%20specific%20scenario.
+- https://www.geeksforgeeks.org/python-string-lower/?ref=header_search
+
 # Acknowledgements
