@@ -44,7 +44,6 @@ class User():
         Gets user input for age in correct form
         and returns user information
         """
-
         print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
         print("E.g. 21\n")
         while True:
@@ -54,6 +53,21 @@ class User():
             text.incorrect_input()
         self.age = userage
         return self.age
+
+    def get_relationship(self):
+        """
+        Gets user input for relationship status in correct form
+        and returns user information
+        """
+        print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+        print("E.g. single, dating, married \n")
+        while True:
+            userrel = input(":")
+            if userrel in ["single", "dating", "married"]:
+                break
+            text.incorrect_input()
+        self.relationship = userrel
+        return self.relationship
 
 
 def user_nickname():
@@ -74,29 +88,13 @@ def user_age():
     return int(User.age)
 
 
-def get_relationship():
-    """
-    Gets user input for relationship status in correct form
-    and returns user information
-    """
-
-    print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
-    print("E.g. single, dating, married \n")
-    while True:
-        relationship = input(":")
-        if relationship in ["single", "dating", "married"]:
-            break
-        text.incorrect_input()
-    return relationship
-
-
 def user_rel():
     """
     Gets the returned value of get relationship to pass it to
     select topic function
     """
-    relationship_input = get_relationship()
-    return relationship_input
+    User.get_relationship(User)
+    return User.relationship
 
 
 def health_predictions():
@@ -178,38 +176,38 @@ def relationship_predictions():
     prediction will be displayed.
     """
     clear_terminal()
-    rel = user_rel()
+    User.relationship = user_rel()
     User.age = user_age()
     while True:
-        if User.age in range(15, 19) and rel == "single":
+        if User.age in range(15, 19) and User.relationship == "single":
             text.relationship_1()
             get_more_topics()
             break
-        if User.age in range(15, 19) and rel == "dating":
+        if User.age in range(15, 19) and User.relationship == "dating":
             text.relationship_2()
             get_more_topics()
             break
-        if User.age in range(19, 45) and rel == "single":
+        if User.age in range(19, 45) and User.relationship == "single":
             text.relationship_3()
             get_more_topics()
             break
-        if User.age in range(19, 45) and rel == "dating":
+        if User.age in range(19, 45) and User.relationship == "dating":
             text.relationship_4()
             get_more_topics()
             break
-        if User.age in range(19, 45) and rel == "married":
+        if User.age in range(19, 45) and User.relationship == "married":
             text.relationship_5()
             get_more_topics()
             break
-        if User.age in range(45, 100) and rel == "single":
+        if User.age in range(45, 100) and User.relationship == "single":
             text.relationship_6()
             get_more_topics()
             break
-        if User.age in range(45, 100) and rel == "dating":
+        if User.age in range(45, 100) and User.relationship == "dating":
             text.relationship_7()
             get_more_topics()
             break
-        if User.age in range(45, 100) and rel == "married":
+        if User.age in range(45, 100) and User.relationship == "married":
             text.relationship_8()
             get_more_topics()
             break
@@ -262,7 +260,6 @@ def get_more_topics():
             print(f'{User.name},')
             text.game_end()
             break
-
         text.incorrect_input()
 
 
@@ -298,5 +295,5 @@ def game_start():
 
 
 if __name__ == "__main__":
-    # text.welcome()
+    text.welcome()
     game_start()
