@@ -18,7 +18,9 @@ There are four different topics users can select to get predictions: Health, Wor
   - [User Experience (UX)](#user-experience-ux)
 - [How To Play](#how-to-play)
 - [Features](#features)
+
   - [Existing Features](#existing-features)
+
     - [Welcome Screen](#welcome-screen)
     - [Select Topic Screen](#select-topic-screen)
     - [User Input](#user-input)
@@ -26,12 +28,16 @@ There are four different topics users can select to get predictions: Health, Wor
       - [Nickname](#nickname)
       - [Relatonship Status](#relatonship-status)
     - [Future Predictions](#future-predictions)
-      - [Health Prediction](#health-prediction)
-      - [Work Prediction](#work-prediction)
-      - [Education Prediction](#education-prediction)
-      - [Relationship Prediction](#relationship-prediction)
+
+      - [Health Predictions](#health-predictions)
+      - [Work Predictions](#work-predictions)
+      - [Education Predictions](#education-predictions)
+      - [Relationship Predictions](#relationship-predictions)
+
     - [Game End](#game-end)
+
   - [Future Enhancements](#future-enhancements)
+
 - [Data Model](#data-model)
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
@@ -81,35 +87,152 @@ As a user, i want to;
 
 # How To Play
 
+1. After the welcome text, to start playing, type yes and enter after the "Are you ready?" question.
+2. Four different topics for predictions will be provided, pick one topic and enter the number you selected.
+3. Depending on the selected topic, game will ask for inputs like age and relationship status. Correctly enter the answer as shown as in examples and press enter.
+4. After the prediction text, the game will proceed with the " Would you like to know more?" question. If the answer is yes, repeat the second and third steps.
+5. If the answer is no, the game will ask an input for a nickname, and proceed to the goodbye text.
+
 # Features
 
 ## Existing Features
 
 ### Welcome Screen
 
+Welcome text greets the user, explains the game, and gives clear instructions for how to play.
+
+![Image of welcome screen]()
+
+" Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
+
+After welcoming, the game asks the user if they are ready. If the user answers yes, the game proceeds to the Select topic screen.
+
+![Image of are you ready text]()
+
+If the user answers no, the game gives user a second chance. If the answer is again no, the game proceeds to say goodbye.
+
+Any invalid input returns an error message and asks to try again.
+
+![Image of goodbye text]()
+
 ### Select Topic Screen
+
+Provides list of available topics to get future predictions.
+
+![Image of topics text]()
+
+The first three topics require users to input their age, fourth topic requires both age and relationship status.
+
+After selecting and entering the topic number, the game proceeds to get the user input.
 
 ### User Input
 
+Depending on the selected topic, the game asks user input for age and relationship status.
+
+Any invalid input returns an error message and asks to try again.
+
+![Image of invalid input text]()
+
+> In the flow chart, all user inputs are asked right after the welcome text. While writing the code I changed that into asking the input whenever it was needed because it logically made more sense and seemed more suitable to the game.
+
+> In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
+> Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
+
 #### Age
+
+Age input is requested for all topics.
+
+![Image of age input text]()
 
 #### Nickname
 
+The game requests for a nickname after getting the prediction and saying no to Would you like to know more question.
+The reason for this is to give the user a feeling more of a personal and life-like experience.
+
+![Image of nickname input text]()
+
 #### Relatonship Status
+
+The game requests for relationship input only if the user selects the Relationship topic to provide an accurate prediction.
+
+![Image of age and relationship input text]()
 
 ### Future Predictions
 
-#### Health Prediction
+Every topic has multiple predictions and displays a text depending on the collected user data.
 
-#### Work Prediction
+#### Health Predictions
 
-#### Education Prediction
+Has three different texts:
 
-#### Relationship Prediction
+1. For age <= 25
+2. For age between 25 and 45
+3. For age between 45 and 100
+
+![Image of health1 text]()
+
+> Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
+
+![Image of not-for-you text]()
+
+#### Work Predictions
+
+Has three different texts:
+
+1. For age <= 18
+2. For age between 18 and 24
+3. For age between 24 and 100
+
+![Image of work2 text]()
+
+> Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
+
+![Image not-for-you text]()
+
+#### Education Predictions
+
+Has three different texts:
+
+1. For age < 18
+2. For age between 18 and 24
+3. For age between 24 and 100
+
+![Image of education1 text]()
+
+> Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
+
+![Image not-for-you text]()
+
+#### Relationship Predictions
+
+Has eight different texts:
+
+1. For age between 15 and 19, single
+2. For age between 15 and 19, dating
+3. For age between 19 and 45, single
+4. For age between 19 and 45, dating
+5. For age between 19 and 45, married
+6. For age between 45 and 100, single
+7. For age between 45 and 100, dating
+8. For age between 45 and 100, married
+
+![Image of relationship2 text]()
+
+> Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
+
+![Image not-for-you text]()
 
 ### Game End
 
+After the user says no to the "Would you like to learn more" question, the game proceeds to get the user's nickname and a goodbye text.
+
+![Image game end text]()
+
 ## Future Enhancements
+
+In the future, I would like to use the User class to save user data to the system and allow users to have accounts.
+
+I would like to get additional user data like gender, and interests, and create enhanced future predictions to give more detailed and personalized future predictions.
 
 # Data Model
 
