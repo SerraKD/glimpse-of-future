@@ -1,32 +1,104 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Glimpse of the Future
 
-Welcome,
+## Table Of Contents
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+- [Glimpse of the Future](#glimpse-of-the-future)
+- [Planning](#planning)
+  - [Flow Chart](#flow-chart)
+  - [User Experience (UX)](#user-experience-ux)
+- [How To Play](#how-to-play)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+    - [Welcome Screen](#welcome-screen)
+    - [Select Topic Screen](#select-topic-screen)
+    - [User Input](#user-input)
+      - [Age](#age)
+      - [Nickname](#nickname)
+      - [Relatonship Status](#relatonship-status)
+    - [Future Predictions](#future-predictions)
+      - [Health Prediction](#health-prediction)
+      - [Work Prediction](#work-prediction)
+      - [Education Prediction](#education-prediction)
+      - [Relationship Prediction](#relationship-prediction)
+    - [Game End](#game-end)
+  - [Future Enhancements](#future-enhancements)
+- [Data Model](#data-model)
+- [Testing](#testing)
+  - [Manual Testing](#manual-testing)
+  - [Validator Testing](#validator-testing)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Remaining Bugs](#remaining-bugs)
+- [Deployment](#deployment)
+- [Deployment to Heroku](#deployment-to-heroku)
+- [Libraries](#libraries)
+  - [os](#os)
+  - [time](#time)
+  - [colorama](#colorama)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
-## Reminders
+# Planning
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Flow Chart
 
-## Creating the Heroku app
+## User Experience (UX)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# How To Play
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Features
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Existing Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Welcome Screen
 
-Connect your GitHub repository and deploy as normal.
+### Select Topic Screen
 
-## Constraints
+### User Input
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+#### Age
 
----
+#### Nickname
 
-Happy coding!
+#### Relatonship Status
+
+### Future Predictions
+
+#### Health Prediction
+
+#### Work Prediction
+
+#### Education Prediction
+
+#### Relationship Prediction
+
+### Game End
+
+## Future Enhancements
+
+# Data Model
+
+# Testing
+
+## Manual Testing
+
+## Validator Testing
+
+## Fixed Bugs
+
+## Remaining Bugs
+
+# Deployment
+
+# Deployment to Heroku
+
+# Libraries
+
+## os
+
+## time
+
+## colorama
+
+# Credits
+
+# Acknowledgements
