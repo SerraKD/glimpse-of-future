@@ -15,20 +15,29 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def get_nickname():
+class User():
     """
-    Gets user input for nickname in correct form
-    and returns user information
+    Creates an instance of user
     """
+    name = " "
+    age = 0
+    relationship = " "
 
-    print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
-    print("E.g. simba\n")
-    while True:
-        nickname = input(":")
-        if nickname.isalpha():
-            break
-        text.incorrect_input()
-    return nickname
+    def get_nickname(self):
+        """
+        Gets user input for nickname in correct form
+        and returns user information
+        """
+        print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+        print("E.g. simba\n")
+
+        while True:
+            nickname = input(":")
+            if nickname.isalpha():
+                break
+            text.incorrect_input()
+        self.name = nickname
+        return self.name
 
 
 def user_nickname():
@@ -36,8 +45,8 @@ def user_nickname():
     Gets the returned value of get nickname to pass it to
     end game function
     """
-    name_input = get_nickname()
-    return name_input
+    User.get_nickname(User)
+    return User.name
 
 
 def get_age():
@@ -248,9 +257,9 @@ def get_more_topics():
             select_topic()
             break
         if answer == "no":
-            name = user_nickname()
+            User.name = user_nickname()
             clear_terminal()
-            print(f'{name},')
+            print(f'{User.name},')
             text.game_end()
             break
 
@@ -289,5 +298,5 @@ def game_start():
 
 
 if __name__ == "__main__":
-    text.welcome()
+    # text.welcome()
     game_start()
