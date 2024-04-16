@@ -254,6 +254,16 @@ Unfortunately, I couldn't work on this bug but I added an exclusive text to the 
 
 # Deployment
 
+I used [Gitpod](https://gitpod.io/) to develop this website.
+
+I deployed the website in early stages of develepment on [GitHub](https://github.com/) with following steps;
+
+1. Log in to Github and go to projects' repository.
+2. Find the Settings on the top of the repository and click.
+3. On the left side of the screen, find Pages and select.
+4. Under the Branch section, click on the dropdown that says none, and pick "Main" and click on save button.
+5. The page is now deployed.
+
 # Deployment to Heroku
 
 # Libraries
