@@ -39,6 +39,22 @@ class User():
         self.name = nickname
         return self.name
 
+    def get_age(self):
+        """
+        Gets user input for age in correct form
+        and returns user information
+        """
+
+        print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+        print("E.g. 21\n")
+        while True:
+            userage = input(":")
+            if userage.isdigit():
+                break
+            text.incorrect_input()
+        self.age = userage
+        return self.age
+
 
 def user_nickname():
     """
@@ -49,29 +65,13 @@ def user_nickname():
     return User.name
 
 
-def get_age():
-    """
-    Gets user input for age in correct form
-    and returns user information
-    """
-
-    print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
-    print("E.g. 21\n")
-    while True:
-        age = input(":")
-        if age.isdigit():
-            break
-        text.incorrect_input()
-    return int(age)
-
-
 def user_age():
     """
     Gets the returned value of get age to pass it to
     select topic function
     """
-    age_input = get_age()
-    return age_input
+    User.get_age(User)
+    return int(User.age)
 
 
 def get_relationship():
@@ -104,17 +104,17 @@ def health_predictions():
     Depending on the collected user data a health prediction will be displayed.
     """
     clear_terminal()
-    age = user_age()
+    User.age = user_age()
     while True:
-        if age <= 25:
+        if User.age <= 25:
             text.health_1()
             get_more_topics()
             break
-        if age in range(25, 45):
+        if User.age in range(25, 45):
             text.health_2()
             get_more_topics()
             break
-        if age in range(45, 100):
+        if User.age in range(45, 100):
             text.health_3()
             get_more_topics()
             break
@@ -128,17 +128,17 @@ def work_predictions():
     Depending on the collected user data a work prediction will be displayed.
     """
     clear_terminal()
-    age = user_age()
+    User.age = user_age()
     while True:
-        if age <= 18:
+        if User.age <= 18:
             text.work_1()
             get_more_topics()
             break
-        if age in range(18, 24):
+        if User.age in range(18, 24):
             text.work_2()
             get_more_topics()
             break
-        if age in range(24, 100):
+        if User.age in range(24, 100):
             text.work_3()
             get_more_topics()
             break
@@ -153,17 +153,17 @@ def education_predictions():
     prediction will be displayed.
     """
     clear_terminal()
-    age = user_age()
+    User.age = user_age()
     while True:
-        if age < 18:
+        if User.age < 18:
             text.education_1()
             get_more_topics()
             break
-        if age in range(18, 24):
+        if User.age in range(18, 24):
             text.education_2()
             get_more_topics()
             break
-        if age in range(24, 100):
+        if User.age in range(24, 100):
             text.education_3()
             get_more_topics()
             break
@@ -178,38 +178,38 @@ def relationship_predictions():
     prediction will be displayed.
     """
     clear_terminal()
-    age = user_age()
     rel = user_rel()
+    User.age = user_age()
     while True:
-        if age in range(15, 19) and rel == "single":
+        if User.age in range(15, 19) and rel == "single":
             text.relationship_1()
             get_more_topics()
             break
-        if age in range(15, 19) and rel == "dating":
+        if User.age in range(15, 19) and rel == "dating":
             text.relationship_2()
             get_more_topics()
             break
-        if age in range(19, 45) and rel == "single":
+        if User.age in range(19, 45) and rel == "single":
             text.relationship_3()
             get_more_topics()
             break
-        if age in range(19, 45) and rel == "dating":
+        if User.age in range(19, 45) and rel == "dating":
             text.relationship_4()
             get_more_topics()
             break
-        if age in range(19, 45) and rel == "married":
+        if User.age in range(19, 45) and rel == "married":
             text.relationship_5()
             get_more_topics()
             break
-        if age in range(45, 100) and rel == "single":
+        if User.age in range(45, 100) and rel == "single":
             text.relationship_6()
             get_more_topics()
             break
-        if age in range(45, 100) and rel == "dating":
+        if User.age in range(45, 100) and rel == "dating":
             text.relationship_7()
             get_more_topics()
             break
-        if age in range(45, 100) and rel == "married":
+        if User.age in range(45, 100) and rel == "married":
             text.relationship_8()
             get_more_topics()
             break
