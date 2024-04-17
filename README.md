@@ -245,6 +245,23 @@ I would like to get additional user data like gender, and interests, and create 
 
 ## Manual Testing
 
+- I tested the project throughout the development stage and specified the bugs I encountered in the Fixed Bugs section.
+
+|      Function       | Correct Input | Incorrect Input | Behaviour |
+| :-----------------: | :-----------: | :-------------: | :-------: |
+|      Age input      |    &check;    |     &check;     |   Pass    |
+| Relationship Input  |    &check;    |     &check;     |   Pass    |
+|   Nickname input    |    &check;    |     &check;     |   Pass    |
+| Select Topic input  |    &check;    |     &check;     |   Pass    |
+| "yes" & "no" inputs |    &check;    |     &check;     |   Pass    |
+
+|     Browser     | Desktop |                                                                                   Result                                                                                    |
+| :-------------: | :-----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|     Chrome      | &check; |                                                                                  No issues                                                                                  |
+|     Safari      | &check; |                                   Emojis are cutted into half, and cannot add any input to the mock terminal. Functionality doesn't work.                                   |
+|      Edge       | &check; |                                                                                  No issues                                                                                  |
+| Mozilla Firefox | &check; | Emojis are cutted into half, not fully displayed in mock terminal. Text colors seems darker even with the bright style added. Other than that no issues with functionality. |
+
 ## Validator Testing
 
 - Both Python files were tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
