@@ -316,6 +316,10 @@ I would like to get additional user data like gender, and interests, and create 
 
 - Before the get nickname and get age methods were only checking if the input was in the correct format, by adding the length to loops I made sure that users could only enter a certain amount of characters.
 
+> 11. " Add a blank space infront of all text for better look on mock terminal" [main e36ad42]
+
+- On the Heroku mock terminal, all text was pushed too far to the left side, causing an unpleasing look for the game. I added a blank space in front of all print statement texts to fix this.
+
 ## Remaining Bugs
 
 - Users can input a message before the prompt.
