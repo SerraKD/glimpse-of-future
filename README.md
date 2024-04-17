@@ -8,7 +8,7 @@ There are four different topics users can select to get predictions: Health, Wor
 
 [Visit the deployed version](https://glimpse-of-future-18938565c6a2.herokuapp.com/)
 
-![Image of welcome screen]()
+![Image of welcome screen](docs-readme/welcome-screen.png)
 
 ## Table Of Contents
 
@@ -60,7 +60,7 @@ There are four different topics users can select to get predictions: Health, Wor
 
 In the planning stage, I used [LucidChart](https://www.lucidchart.com/pages/) to create main logic flow of the game. The final version of the application has a few differences, such as when the game asks for user input or how the game reacts to those inputs. I mentioned it in more detail in the [User Input](#user-input) section.
 
-![Image of Flow Chart]()
+![Image of Flow Chart](docs-readme/flowchart.png)
 
 ## User Experience (UX)
 
@@ -102,25 +102,25 @@ As a user, i want to;
 
 Welcome text greets the user, explains the game, and gives clear instructions for how to play.
 
-![Image of welcome screen]()
+![Image of welcome screen](docs-readme/welcome-screen.png)
 
 " Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
 
 After welcoming, the game asks the user if they are ready. If the user answers yes, the game proceeds to the Select topic screen.
 
-![Image of are you ready text]()
+![Image of are you ready text](docs-readme/are-you-ready.png)
 
 If the user answers no, the game gives user a second chance. If the answer is again no, the game proceeds to say goodbye.
 
-Any invalid input returns an error message and asks to try again.
+![Image of user answer no text](docs-readme/final-answer.png)
 
-![Image of goodbye text]()
+Any invalid input returns an error message and asks to try again.
 
 ### Select Topic Screen
 
 Provides list of available topics to get future predictions.
 
-![Image of topics text]()
+![Image of topics text](docs-readme/select-topic.png)
 
 The first three topics require users to input their age, fourth topic requires both age and relationship status.
 
@@ -132,7 +132,7 @@ Depending on the selected topic, the game asks user input for age and relationsh
 
 Any invalid input returns an error message and asks to try again.
 
-![Image of invalid input text]()
+![Image of invalid input text](docs-readme/invalid-input.png)
 
 > In the flow chart, all user inputs are asked right after the welcome text. While writing the code I changed that into asking the input whenever it was needed because it logically made more sense and seemed more suitable to the game.
 
@@ -140,7 +140,7 @@ Any invalid input returns an error message and asks to try again.
 
 Age input is requested for all topics.
 
-![Image of age input text]()
+![Image of age input text](docs-readme/age-input.png)
 
 > User input for age is limited to a maximum of 3 characters.
 
@@ -151,13 +151,13 @@ The reason for this is to give the user a feeling more of a personal and life-li
 
 > User input for nickname is limited to a maximum of 9 characters.
 
-![Image of nickname input text]()
+![Image of nickname input text](docs-readme/nickname-input.png)
 
 #### Relatonship Status
 
 The game requests for relationship input only if the user selects the Relationship topic to provide an accurate prediction.
 
-![Image of age and relationship input text]()
+![Image of relationship input text](docs-readme/relationship-input.png)
 
 ### Future Predictions
 
@@ -171,11 +171,11 @@ Has three different texts:
 2. For age between 25 and 45
 3. For age between 45 and 100
 
-![Image of health1 text]()
+![Image of health1 text](docs-readme/health-prediction1.png)
 
 > Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
 
-![Image of not-for-you text]()
+![Image of not-for-you text](docs-readme/not-for-you.png)
 
 #### Work Predictions
 
@@ -185,11 +185,9 @@ Has three different texts:
 2. For age between 18 and 24
 3. For age between 24 and 100
 
-![Image of work2 text]()
+![Image of work2 text](docs-readme/work-prediction2.png)
 
 > Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
-
-![Image not-for-you text]()
 
 #### Education Predictions
 
@@ -199,11 +197,9 @@ Has three different texts:
 2. For age between 18 and 24
 3. For age between 24 and 100
 
-![Image of education1 text]()
+![Image of education1 text](docs-readme/education-prediction1.png)
 
 > Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
-
-![Image not-for-you text]()
 
 #### Relationship Predictions
 
@@ -218,17 +214,15 @@ Has eight different texts:
 7. For age between 45 and 100, dating
 8. For age between 45 and 100, married
 
-![Image of relationship2 text]()
+![Image of relationship2 text](docs-readme/relationship-prediction2.png)
 
 > Any age that is not described as above range falls into the not-for-you category, inform users that this topic is not suitable for them.
-
-![Image not-for-you text]()
 
 ### Game End
 
 After the user says no to the "Would you like to learn more" question, the game proceeds to get the user's nickname and a goodbye text.
 
-![Image game end text]()
+![Image game end text](docs-readme/goodbye.png)
 
 ## Future Enhancements
 
