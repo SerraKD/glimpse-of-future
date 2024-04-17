@@ -336,7 +336,36 @@ I deployed the website in early stages of develepment on [GitHub](https://github
 4. Under the Branch section, click on the dropdown that says none, and pick "Main" and click on save button.
 5. The page is now deployed.
 
+## Local Deployment
+
+**Fork**:
+
+1. Log in to Github and go to projects' repository.
+2. On the top right side of the page, click on _fork_ button.
+
+**Clone**:
+
+1. Log in to Github and go to projects' repository.
+2. On the top of the file lists, click on _Code_ button.
+3. Whether you want to use HTTPS, SSH key or Github CLI select it, and then click on copy.
+4. Open the terminal, type **git clone** and paste the URL copied.
+5. Press enter and local clone is now created.
+
 # Deployment to Heroku
+
+1. Log in or create an account in [Heroku](https://dashboard.heroku.com/).
+2. Click the New button and select New App.
+3. Give the app a unique name and choose the region.
+4. Click the Create app button.
+5. Go to settings and click to the Reveal Config Vars.
+6. Add PORT = Key , 8000 = Value and click add button.
+7. Add build packs, Python and Node.js. The order has to be Python first and Node.js second.
+8. If they are not in this order, click and drag to correct it.
+9. Click Deploy at the top of the page and to go to the Deployment.
+10. Select GitHub as the deployment method and confirm connecting your Github account.
+11. Search for the repository name and click connect button.
+12. You can either use Automatic deploys or Manual deploys depending on your preference.
+13. Once completed click Open App.
 
 # Libraries
 
