@@ -257,7 +257,7 @@ def get_more_topics():
         if answer == "no":
             User.name = user_nickname()
             clear_terminal()
-            print(f'{User.name},')
+            print(f' {User.name},')
             text.game_end()
             break
         text.incorrect_input()
