@@ -232,9 +232,71 @@ I would like to get additional user data like gender, and interests, and create 
 
 # Data Model
 
+- For the logic flow of the game, please refer to the [Flow Chart](#flow-chart).
+
 - In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
 
-- Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
+- Later on I wanted to test my skills further and implement OOP in this project. Because above three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class. This class can be used in future for creating user accounts.
+
+```py
+class User():
+    """
+    Creates an instance of user
+    """
+    name = " "
+    age = 0
+    relationship = " "
+
+    def get_nickname(self):
+        """
+        Gets user input for nickname in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+        print("E.g. simba\n")
+
+        while True:
+            nickname = input(":")
+            if nickname.isalpha() and len(nickname) < 10:
+                break
+            text.incorrect_input()
+        self.name = nickname
+        return self.name
+
+    def get_age(self):
+        """
+        Gets user input for age in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+        print("E.g. 21\n")
+        while True:
+            userage = input(":")
+            if userage.isdigit() and len(userage) < 4:
+                break
+            text.incorrect_input()
+        self.age = userage
+        return self.age
+
+    def get_relationship(self):
+        """
+        Gets user input for relationship status in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+        print("E.g. single, dating, married \n")
+        while True:
+            userrel = input(":")
+            if userrel in ["single", "dating", "married"]:
+                break
+            text.incorrect_input()
+        self.relationship = userrel
+        return self.relationship
+
+```
 
 # Testing
 
