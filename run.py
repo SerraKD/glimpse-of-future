@@ -30,7 +30,7 @@ class User():
         """
         clear_terminal()
         print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
-        print("E.g. simba\n")
+        print("E.g. simba (Up to nine characters)\n")
 
         while True:
             nickname = input(":")
