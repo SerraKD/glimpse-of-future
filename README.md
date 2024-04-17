@@ -105,7 +105,6 @@ Welcome text greets the user, explains the game, and gives clear instructions fo
 ![Image of welcome screen](docs-readme/welcome-screen.png)
 
 > - " Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
->   ![Image of please wait for a promt text](docs-readme/wait-for-prompt.png)
 
 After welcoming, the game asks the user if they are ready. If the user answers yes, the game proceeds to the Select topic screen.
 
@@ -322,7 +321,7 @@ I would like to get additional user data like gender, and interests, and create 
 
 Unfortunately, I couldn't work on this bug but I added an exclusive text to the welcome screen to inform the user to wait for a prompt.
 
-![Image of wait for a prompt to input text]()
+> ![Image of wait for a prompt text](docs-readme/wait-for-prompt.png)
 
 # Deployment
 
