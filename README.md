@@ -142,10 +142,14 @@ Age input is requested for all topics.
 
 ![Image of age input text]()
 
+> User input for age is limited to a maximum of 3 characters.
+
 #### Nickname
 
 The game requests for a nickname after getting the prediction and saying no to Would you like to know more question.
 The reason for this is to give the user a feeling more of a personal and life-like experience.
+
+> User input for nickname is limited to a maximum of 9 characters.
 
 ![Image of nickname input text]()
 
