@@ -33,7 +33,7 @@ class User():
 
         while True:
             nickname = input(":")
-            if nickname.isalpha():
+            if nickname.isalpha() and len(nickname) < 10:
                 break
             text.incorrect_input()
         self.name = nickname
@@ -48,7 +48,7 @@ class User():
         print("E.g. 21\n")
         while True:
             userage = input(":")
-            if userage.isdigit():
+            if userage.isdigit() and len(userage) < 4:
                 break
             text.incorrect_input()
         self.age = userage
