@@ -104,8 +104,8 @@ Welcome text greets the user, explains the game, and gives clear instructions fo
 
 ![Image of welcome screen](docs-readme/welcome-screen.png)
 
-> " Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
-> ![Image of please wait for a promt text](docs-readme/wait-for-prompt.png)
+> - " Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
+>   ![Image of please wait for a promt text](docs-readme/wait-for-prompt.png)
 
 After welcoming, the game asks the user if they are ready. If the user answers yes, the game proceeds to the Select topic screen.
 
@@ -233,8 +233,9 @@ I would like to get additional user data like gender, and interests, and create 
 
 # Data Model
 
-> In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
-> Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
+- In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
+
+- Later on, Because all three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class.
 
 # Testing
 
@@ -261,13 +262,13 @@ I would like to get additional user data like gender, and interests, and create 
 
 - Both Python files were tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
 
-|  File  | [CI Python Linter](https://pep8ci.herokuapp.com/) |     Result      |
-| :----: | :-----------------------------------------------: | :-------------: |
-| run.py |        ![run.py validation result image]()        | No errors found |
+|  File  |        [CI Python Linter](https://pep8ci.herokuapp.com/)         |     Result      |
+| :----: | :--------------------------------------------------------------: | :-------------: |
+| run.py | ![run.py validation result image](docs-readme/validator-run.png) | No errors found |
 
-|  File   | [CI Python Linter](https://pep8ci.herokuapp.com/) |     Result      |
-| :-----: | :-----------------------------------------------: | :-------------: |
-| text.py |       ![text.py validation result image]()        | No errors found |
+|  File   |         [CI Python Linter](https://pep8ci.herokuapp.com/)          |     Result      |
+| :-----: | :----------------------------------------------------------------: | :-------------: |
+| text.py | ![text.py validation result image](docs-readme/validator-text.png) | No errors found |
 
 ## Fixed Bugs
 
