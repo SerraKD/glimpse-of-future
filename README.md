@@ -281,6 +281,10 @@ I would like to get additional user data like gender, and interests, and create 
 
 - After adding changes to if-else statements with Pylint, I found a new bug in the game start functions input validation. When a user enters incorrect answer, it creates an infinite loop. By removing the secondary while statement, adding the else statement, and correcting the indentation I fixed the error.
 
+> 10. " Add lenght to get nickname and and get age methods to limit the amount of characters user can input" [main 451565e]
+
+- Before the get nickname and get age methods were only checking if the input was in the correct format, by adding the length to loops I made sure that users could only enter a certain amount of characters.
+
 ## Remaining Bugs
 
 - Users can input a message before the prompt.
@@ -352,6 +356,7 @@ I deployed the website in early stages of develepment on [GitHub](https://github
 - https://stackoverflow.com/questions/74662334/using-user-input-function-in-classes
 - https://www.tutorialspoint.com/how-do-i-call-a-variable-from-another-function-in-python#:~:text=To%20summarize%2C%20when%20it%20comes,requirements%20of%20the%20specific%20scenario.
 - https://www.geeksforgeeks.org/python-string-lower/?ref=header_search
+- https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths
 
 # Acknowledgements
 
