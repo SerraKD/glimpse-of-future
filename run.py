@@ -28,6 +28,7 @@ class User():
         Gets user input for nickname in correct form
         and returns user information
         """
+        clear_terminal()
         print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
         print("E.g. simba\n")
 
@@ -44,6 +45,7 @@ class User():
         Gets user input for age in correct form
         and returns user information
         """
+        clear_terminal()
         print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
         print("E.g. 21\n")
         while True:
@@ -59,6 +61,7 @@ class User():
         Gets user input for relationship status in correct form
         and returns user information
         """
+        clear_terminal()
         print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
         print("E.g. single, dating, married \n")
         while True:
@@ -225,7 +228,7 @@ def select_topic():
 
     text.topics()
     while True:
-        topic = input(" ")
+        topic = input(":")
         if topic == "1":
             health_predictions()
             break
@@ -249,7 +252,7 @@ def get_more_topics():
     """
     text.know_more()
     while True:
-        answer = input(" ").lower()
+        answer = input(":").lower()
         if answer == "yes":
             clear_terminal()
             select_topic()
@@ -272,7 +275,7 @@ def game_start():
     """
     text.game_start()
     while True:
-        answer = input(" ").lower()
+        answer = input(":").lower()
         if answer == "yes":
             clear_terminal()
             select_topic()
@@ -280,7 +283,7 @@ def game_start():
         if answer == "no":
             text.user_answer_no()
             text.game_start()
-            answer = input(" ").lower()
+            answer = input(":").lower()
             if answer == "yes":
                 clear_terminal()
                 select_topic()
