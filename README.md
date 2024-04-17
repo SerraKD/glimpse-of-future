@@ -104,7 +104,8 @@ Welcome text greets the user, explains the game, and gives clear instructions fo
 
 ![Image of welcome screen](docs-readme/welcome-screen.png)
 
-" Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
+> " Please wait for a prompt to input a message. " is specially added to the welcome text to inform users at the beginning of the game.
+> ![Image of please wait for a promt text](docs-readme/wait-for-prompt.png)
 
 After welcoming, the game asks the user if they are ready. If the user answers yes, the game proceeds to the Select topic screen.
 
