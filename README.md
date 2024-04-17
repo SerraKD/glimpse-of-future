@@ -272,47 +272,47 @@ I would like to get additional user data like gender, and interests, and create 
 
 ## Fixed Bugs
 
-> 1. " Make get age functions return value integer to avoid repetition" [main d7117d8]
+> 1. " Make get age functions return value integer to avoid repetition" [main d7117d8](https://github.com/SerraKD/glimpse-of-future/commit/d7117d84e98f8462f5fc214d0cad68560b903a74)
 
 - Otherwise i had to repeat in select topic function loops.
 
-> 2. " Fix the typo in topics function in text.py" [main 3daa1a5]
+> 2. " Fix the typo in topics function in text.py" [main 3daa1a5](https://github.com/SerraKD/glimpse-of-future/commit/3daa1a5c5fe50f5f0392165fbf9d279caf1b61ae)
 
 - I called relationship topic number 3. Would confuse the user when selecting a topic. I fixed the text as 4.
 
-> 3. " Fix the function call for age in select topic, use returned value instead" [main a7eb663]
+> 3. " Fix the function call for age in select topic, use returned value instead" [main a7eb663](https://github.com/SerraKD/glimpse-of-future/commit/a7eb6633c3090b64f9c26bd7b099cc94e958bc93)
 
 - I was calling the user_age() function in the if and all the elif blocks in select_topic. So function was being called again for each check. I called the function once and stored the return value. (Credits John from Tutor Assistance)
 
-> 4. " Fix the age range for relationships in select topic function" [main bfaa4cc]
+> 4. " Fix the age range for relationships in select topic function" [main bfaa4cc](https://github.com/SerraKD/glimpse-of-future/commit/bfaa4cccdf593ed93a391bf68c54d07ebfed85e4)
 
 - There was a gap in if-elif loops for age, making it miss a couple of age ranges. I fixed the error by rearranging the range.
 
-> 5. " Fix the code for get relationship functions user input validation by adding list" [main d4a2c7c]
+> 5. " Fix the code for get relationship functions user input validation by adding list" [main d4a2c7c](https://github.com/SerraKD/glimpse-of-future/commit/d4a2c7c669d780b94a02054c282e834b4d12363d)
 
 - The get relationship function was validating user input by checking if the entered answer is alphabetical. By adding a list of accepted answers in the if loop I ensured that only the correct answer will make the game proceed.
 
-> 6. " Fix the code for game start function, rearrange the calling of the select topic and game start functions" [main c48881b]
+> 6. " Fix the code for game start function, rearrange the calling of the select topic and game start functions" [main c48881b](https://github.com/SerraKD/glimpse-of-future/commit/c48881b6c615ce3d622e3da8f6a95bce499acaa1)
 
 - Because of the calling of the select topic function, even if the user says no to continue playing game was proceeding with giving the user options to select a topic. By moving the game start function under the select topic function I managed to prevent unwanted loops. I also added another while true to to nested loop to make sure the function behaves as expected.
 
-> 7. " Add style bright to texts in text.py" [main 96cfb72]
+> 7. " Add style bright to texts in text.py" [main 96cfb72](https://github.com/SerraKD/glimpse-of-future/commit/96cfb72bbceabe3e1f134d263ce6910156f68bea)
 
 - There was a bug in Heroku causing the colorama text colors to seem darker than the terminal in Gitpod. I added a bright style to ensure that the text is easily readable.
 
-> 8. " Refactor all if else statements with Pylint in run.py" [main 4663398]
+> 8. " Refactor all if else statements with Pylint in run.py" [main 4663398](https://github.com/SerraKD/glimpse-of-future/commit/4663398ed221f6535539d33de08b284fb02e77b8)
 
 - Because all if-else statemens had breaks, I removed unnecessary elif and else statements for cleaner code.
 
-> 9. " Fix the code for game start function, make input validation work correctly" [main ae5d6bc]
+> 9. " Fix the code for game start function, make input validation work correctly" [main ae5d6bc](https://github.com/SerraKD/glimpse-of-future/commit/ae5d6bc6e49a46b87b7fca2e5083b3586e70fed7)
 
 - After adding changes to if-else statements with Pylint, I found a new bug in the game start functions input validation. When a user enters incorrect answer, it creates an infinite loop. By removing the secondary while statement, adding the else statement, and correcting the indentation I fixed the error.
 
-> 10. " Add lenght to get nickname and and get age methods to limit the amount of characters user can input" [main 451565e]
+> 10. " Add lenght to get nickname and and get age methods to limit the amount of characters user can input" [main 451565e](https://github.com/SerraKD/glimpse-of-future/commit/451565e3fe54fd9308cd6dce08d31cb4a7a3461b)
 
 - Before the get nickname and get age methods were only checking if the input was in the correct format, by adding the length to loops I made sure that users could only enter a certain amount of characters.
 
-> 11. " Add a blank space infront of all text for better look on mock terminal" [main e36ad42]
+> 11. " Add a blank space infront of all text for better look on mock terminal" [main e36ad42](https://github.com/SerraKD/glimpse-of-future/commit/e36ad42381940be5fc75b489cba84c2f3abc3376)
 
 - On the Heroku mock terminal, all text was pushed too far to the left side, causing an unpleasing look for the game. I added a blank space in front of all print statement texts to fix this.
 
