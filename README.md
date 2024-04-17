@@ -247,6 +247,16 @@ I would like to get additional user data like gender, and interests, and create 
 
 ## Validator Testing
 
+- Both Python files were tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+|  File  | [CI Python Linter](https://pep8ci.herokuapp.com/) |     Result      |
+| :----: | :-----------------------------------------------: | :-------------: |
+| run.py |        ![run.py validation result image]()        | No errors found |
+
+|  File   | [CI Python Linter](https://pep8ci.herokuapp.com/) |     Result      |
+| :-----: | :-----------------------------------------------: | :-------------: |
+| text.py |       ![text.py validation result image]()        | No errors found |
+
 ## Fixed Bugs
 
 > 1. " Make get age functions return value integer to avoid repetition" [main d7117d8]
