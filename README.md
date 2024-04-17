@@ -304,13 +304,23 @@ class User():
 
 - I tested the project throughout the development stage and specified the bugs I encountered in the Fixed Bugs section.
 
-|      Function       | Correct Input | Incorrect Input | Behaviour |
-| :-----------------: | :-----------: | :-------------: | :-------: |
-|      Age input      |    &check;    |     &check;     |   Pass    |
-| Relationship Input  |    &check;    |     &check;     |   Pass    |
-|   Nickname input    |    &check;    |     &check;     |   Pass    |
-| Select Topic input  |    &check;    |     &check;     |   Pass    |
-| "yes" & "no" inputs |    &check;    |     &check;     |   Pass    |
+|      Tested invalid inputs      |   Age   | Relationship | Nickname | Select Topic | "yes" & "no" | Input Validation Behaviour |
+| :-----------------------------: | :-----: | :----------: | :------: | :----------: | :----------: | :------------------------: |
+|         - a letter "a"          | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+|    - multiple letters "abc"     | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+|         - a number "1"          | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+|    - multiple numbers "123"     | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+| - an empty _ENTER_ with nothing | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+|          - only spaces          | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+|  - special characters "? ! @ "  | &check; |   &check;    | &check;  |   &check;    |   &check;    |            Pass            |
+
+|    Inputs    |            Accepted Input             |
+| :----------: | :-----------------------------------: |
+|     Age      |    only digit, up to 3 characters     |
+| Relationship |    "single" & "dating" & "married"    |
+|   Nickname   | only alphabetical, up to 9 characters |
+| Select Topic |      only digit, in range 1 to 4      |
+| "yes" & "no" |             "yes" & "no"              |
 
 |     Browser     | Desktop |                                                                                   Result                                                                                    |
 | :-------------: | :-----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
