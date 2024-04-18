@@ -167,7 +167,7 @@ Every topic has multiple predictions and displays a text depending on the collec
 
 Has three different texts:
 
-1. For age <= 25
+1. For age between 7 and 25
 2. For age between 25 and 45
 3. For age between 45 and 100
 
@@ -181,7 +181,7 @@ Has three different texts:
 
 Has three different texts:
 
-1. For age <= 18
+1. For age between 15 and 18
 2. For age between 18 and 24
 3. For age between 24 and 100
 
@@ -193,7 +193,7 @@ Has three different texts:
 
 Has three different texts:
 
-1. For age < 18
+1. For age between 8 and 18
 2. For age between 18 and 24
 3. For age between 24 and 100
 
