@@ -52,6 +52,27 @@ def welcome():
     print(Style.RESET_ALL)
 
 
+def get_nickname():
+    """ Asks user for a name, gives an example
+    """
+    print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+    print("E.g. simba (Up to nine characters)\n")
+
+
+def get_age():
+    """  Asks user for age, gives an example
+    """
+    print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+    print("E.g. 21\n")
+
+
+def get_relationship():
+    """  Asks user for their relationship status, gives examples
+    """
+    print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+    print("E.g. single, dating, married \n")
+
+
 def game_start():
     """
     Asks user if they want to start the game
