@@ -13,7 +13,7 @@ def welcome():
     """
     time.sleep(1)
     print(Fore.MAGENTA + Style.BRIGHT +
-          "\n\U0001F52E Welcome to the Glimpse of the Future \U0001F52E\n")
+          "\n \U0001F52E Welcome to the Glimpse of the Future \U0001F52E\n")
     time.sleep(2)
     print(Fore.BLUE + Style.BRIGHT +
           "\n With me, you can glance at your future \U0001F440\n")
