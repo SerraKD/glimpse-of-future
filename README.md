@@ -72,6 +72,8 @@ In the planning stage, I used [LucidChart](https://www.lucidchart.com/pages/) to
 
 - Later on I wanted to test my skills further and implement OOP in this project. Because above three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class. This class can be used in future for creating user accounts.
 
+- I tried to refactor the code as much as possible, such as shortening the if-else statements using the Pylint, moving all print statements to text.py, and turning User into a class. My main focus was keeping a clean code while not compromising any functionality.
+
 ```py
 class User():
     """
