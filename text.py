@@ -24,7 +24,8 @@ def welcome():
     time.sleep(1)
     print(" I will do most of the work for you.\n")
     time.sleep(2)
-    print("\n All I need is basic details as:\n")
+    print(Fore.CYAN + Style.BRIGHT +
+          "\n All I need is basic details as:\n")
     time.sleep(1)
     print(" your nickname, age, and relationship status.\n")
     time.sleep(3)
@@ -34,7 +35,8 @@ def welcome():
     time.sleep(2)
     print("\n You can only pick one topic per session.\n")
     time.sleep(2)
-    print("\n Don't worry if you are hungry for more, \U0001F60C\n")
+    print(Fore.YELLOW + Style.BRIGHT +
+          "\n Don't worry if you are hungry for more, \U0001F60C\n")
     time.sleep(1)
     print(" You can pick another topic after the first sneak peek.\n")
     time.sleep(2)
