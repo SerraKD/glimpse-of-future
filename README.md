@@ -87,9 +87,7 @@ class User():
         and returns user information
         """
         clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
-        print("E.g. simba\n")
-
+        text.get_nickname()
         while True:
             nickname = input(":")
             if nickname.isalpha() and len(nickname) < 10:
@@ -104,8 +102,7 @@ class User():
         and returns user information
         """
         clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
-        print("E.g. 21\n")
+        text.get_age()
         while True:
             userage = input(":")
             if userage.isdigit() and len(userage) < 4:
@@ -120,8 +117,7 @@ class User():
         and returns user information
         """
         clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
-        print("E.g. single, dating, married \n")
+        text.get_relationship()
         while True:
             userrel = input(":")
             if userrel in ["single", "dating", "married"]:
