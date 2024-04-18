@@ -12,11 +12,11 @@ def welcome():
     Welcomes user to the game and gives details about the game.
     """
     time.sleep(1)
-    print(Fore.MAGENTA + "\n ********************************************\n")
+    print(Fore.MAGENTA + "\n ******************************************\n")
     print(Fore.MAGENTA + Style.BRIGHT +
           "\n \U0001F52E Welcome to the Glimpse of the Future \U0001F52E\n")
     print(Fore.MAGENTA + Style.NORMAL +
-          "\n ********************************************\n")
+          "\n ******************************************\n")
     time.sleep(2)
     print(Fore.BLUE + Style.BRIGHT +
           "\n With me, you can glance at your future \U0001F440\n")
@@ -25,7 +25,7 @@ def welcome():
     time.sleep(2)
     print("\n You don't need to do much.\n")
     time.sleep(1)
-    print(" I will do most of the work for you.\n")
+    print(" I will do most of the work for you. \U0001F56F\n")
     time.sleep(2)
     print(Fore.CYAN + Style.BRIGHT +
           "\n All I need is basic details as:\n")
