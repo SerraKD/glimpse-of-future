@@ -15,6 +15,7 @@ There are four different topics users can select to get predictions: Health, Wor
 - [Glimpse of the Future](#glimpse-of-the-future)
 - [Planning](#planning)
   - [Flow Chart](#flow-chart)
+  - [Data Model](#data-model)
   - [User Experience (UX)](#user-experience-ux)
 - [How To Play](#how-to-play)
 - [Features](#features)
@@ -38,7 +39,6 @@ There are four different topics users can select to get predictions: Health, Wor
 
   - [Future Enhancements](#future-enhancements)
 
-- [Data Model](#data-model)
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
   - [Validator Testing](#validator-testing)
@@ -58,9 +58,79 @@ There are four different topics users can select to get predictions: Health, Wor
 
 ## Flow Chart
 
-In the planning stage, I used [LucidChart](https://www.lucidchart.com/pages/) to create main logic flow of the game. The final version of the application has a few differences, such as when the game asks for user input or how the game reacts to those inputs. I mentioned it in more detail in the [User Input](#user-input) section.
+In the planning stage, I used [LucidChart](https://www.lucidchart.com/pages/) to create main logic flow of the game. The final version of the application has a few differences, such as when the game asks for user input or how the game reacts to those inputs. I mentioned it in more detail in the [Data Model](#data-model) section.
 
 ![Image of Flow Chart](docs-readme/flowchart.png)
+
+# Data Model
+
+- For the logic flow of the game, please refer to the [Flow Chart](#flow-chart).
+
+> In the flow chart, all user inputs are asked right after the welcome text. While writing the code I changed that into asking the input whenever it was needed because it logically made more sense and seemed more suitable to the game.
+
+- In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
+
+- Later on I wanted to test my skills further and implement OOP in this project. Because above three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class. This class can be used in future for creating user accounts.
+
+```py
+class User():
+    """
+    Creates an instance of user
+    """
+    name = " "
+    age = 0
+    relationship = " "
+
+    def get_nickname(self):
+        """
+        Gets user input for nickname in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
+        print("E.g. simba\n")
+
+        while True:
+            nickname = input(":")
+            if nickname.isalpha() and len(nickname) < 10:
+                break
+            text.incorrect_input()
+        self.name = nickname
+        return self.name
+
+    def get_age(self):
+        """
+        Gets user input for age in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
+        print("E.g. 21\n")
+        while True:
+            userage = input(":")
+            if userage.isdigit() and len(userage) < 4:
+                break
+            text.incorrect_input()
+        self.age = userage
+        return self.age
+
+    def get_relationship(self):
+        """
+        Gets user input for relationship status in correct form
+        and returns user information
+        """
+        clear_terminal()
+        print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
+        print("E.g. single, dating, married \n")
+        while True:
+            userrel = input(":")
+            if userrel in ["single", "dating", "married"]:
+                break
+            text.incorrect_input()
+        self.relationship = userrel
+        return self.relationship
+
+```
 
 ## User Experience (UX)
 
@@ -133,8 +203,6 @@ Depending on the selected topic, the game asks user input for age and relationsh
 Any invalid input returns an error message and asks to try again.
 
 ![Image of invalid input text](docs-readme/invalid-input.png)
-
-> In the flow chart, all user inputs are asked right after the welcome text. While writing the code I changed that into asking the input whenever it was needed because it logically made more sense and seemed more suitable to the game.
 
 #### Age
 
@@ -229,74 +297,6 @@ After the user says no to the "Would you like to learn more" question, the game 
 In the future, I would like to use the User class to save user data to the system and allow users to have accounts.
 
 I would like to get additional user data like gender, and interests, and create enhanced future predictions to give more detailed and personalized future predictions.
-
-# Data Model
-
-- For the logic flow of the game, please refer to the [Flow Chart](#flow-chart).
-
-- In the beginning, I created a one big nested loop the get all user inputs. Even though it functioned, it became too complex and difficult to read, so I separated it into three different functions age, nickname, and relationship.
-
-- Later on I wanted to test my skills further and implement OOP in this project. Because above three functions were getting and returning user data, I created a Class for User and added the functions as methods into the class. This class can be used in future for creating user accounts.
-
-```py
-class User():
-    """
-    Creates an instance of user
-    """
-    name = " "
-    age = 0
-    relationship = " "
-
-    def get_nickname(self):
-        """
-        Gets user input for nickname in correct form
-        and returns user information
-        """
-        clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter a nickname only using letters.\n")
-        print("E.g. simba\n")
-
-        while True:
-            nickname = input(":")
-            if nickname.isalpha() and len(nickname) < 10:
-                break
-            text.incorrect_input()
-        self.name = nickname
-        return self.name
-
-    def get_age(self):
-        """
-        Gets user input for age in correct form
-        and returns user information
-        """
-        clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter your age in numbers.\n")
-        print("E.g. 21\n")
-        while True:
-            userage = input(":")
-            if userage.isdigit() and len(userage) < 4:
-                break
-            text.incorrect_input()
-        self.age = userage
-        return self.age
-
-    def get_relationship(self):
-        """
-        Gets user input for relationship status in correct form
-        and returns user information
-        """
-        clear_terminal()
-        print(Fore.YELLOW + "\nPlease enter your relationship status.\n")
-        print("E.g. single, dating, married \n")
-        while True:
-            userrel = input(":")
-            if userrel in ["single", "dating", "married"]:
-                break
-            text.incorrect_input()
-        self.relationship = userrel
-        return self.relationship
-
-```
 
 # Testing
 
