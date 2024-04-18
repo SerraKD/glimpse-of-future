@@ -35,6 +35,7 @@ class User():
                 break
             text.incorrect_input()
         self.name = nickname
+        clear_terminal()
         return self.name
 
     def get_age(self):
@@ -50,6 +51,7 @@ class User():
                 break
             text.incorrect_input()
         self.age = userage
+        clear_terminal()
         return self.age
 
     def get_relationship(self):
@@ -65,6 +67,7 @@ class User():
                 break
             text.incorrect_input()
         self.relationship = userrel
+        clear_terminal()
         return self.relationship
 
 
@@ -285,11 +288,11 @@ def game_start():
                 break
             if answer == "no":
                 text.user_answer_final()
-                clear_terminal()
                 break
             text.incorrect_input()
         else:
             text.incorrect_input()
+        clear_terminal()
 
 
 if __name__ == "__main__":
