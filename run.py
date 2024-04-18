@@ -297,4 +297,5 @@ def game_start():
 
 if __name__ == "__main__":
     text.welcome()
+    clear_terminal()
     game_start()
