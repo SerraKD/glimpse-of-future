@@ -153,7 +153,7 @@ def game_end():
 
 def health_1():
     """
-    Health future prediction text for age <=25
+    Health future prediction text for age in range (7, 25)
     """
     time.sleep(1)
     print(Fore.GREEN + Style.BRIGHT +
@@ -175,7 +175,7 @@ def health_1():
 
 def health_2():
     """
-    Health future prediction text for age <=45
+    Health future prediction text for age in range(25, 45)
     """
     time.sleep(1)
     print(Fore.GREEN + "\n Hmm.. A curious choice for you. \U0001F914\n")
@@ -196,7 +196,7 @@ def health_2():
 
 def health_3():
     """
-    Health future prediction text for age =>46
+    Health future prediction text for age in range(45, 100)
     """
     time.sleep(1)
     print(Fore.GREEN + "\n What is that sound?!\n")
@@ -217,7 +217,7 @@ def health_3():
 
 def work_1():
     """
-    Work future prediction text for age <=18
+    Work future prediction text for age in range(15, 18)
     """
     time.sleep(1)
     print(Fore.BLUE + Style.BRIGHT +
@@ -279,7 +279,7 @@ def work_3():
 
 def education_1():
     """
-    Education future prediction text for age <=18
+    Education future prediction text for age in range(8, 18)
     """
     time.sleep(1)
     print(Fore.CYAN + Style.BRIGHT +
