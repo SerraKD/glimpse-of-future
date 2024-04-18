@@ -107,7 +107,7 @@ def health_predictions():
     clear_terminal()
     User.age = user_age()
     while True:
-        if User.age <= 25:
+        if User.age in range(7, 25):
             text.health_1()
             get_more_topics()
             break
@@ -131,7 +131,7 @@ def work_predictions():
     clear_terminal()
     User.age = user_age()
     while True:
-        if User.age <= 18:
+        if User.age in range(15, 18):
             text.work_1()
             get_more_topics()
             break
@@ -156,7 +156,7 @@ def education_predictions():
     clear_terminal()
     User.age = user_age()
     while True:
-        if User.age < 18:
+        if User.age in range(8, 18):
             text.education_1()
             get_more_topics()
             break
