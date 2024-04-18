@@ -409,6 +409,8 @@ I deployed the website in early stages of develepment on [GitHub](https://github
 
 ## Local Deployment
 
+- You need to install Python in your workspace for local deployment of this project.
+
 **Fork**:
 
 1. Log in to Github and go to projects' repository.
