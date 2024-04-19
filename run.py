@@ -292,7 +292,6 @@ def game_start():
             text.incorrect_input()
         else:
             text.incorrect_input()
-        clear_terminal()
 
 
 if __name__ == "__main__":
