@@ -385,6 +385,10 @@ I would like to get additional user data like gender, and interests, and create 
 
 - On the Heroku mock terminal, all text was pushed too far to the left side, causing an unpleasing look for the game. I added a blank space in front of all print statement texts to fix this.
 
+> 12. " Remove the last clear terminal call in game start" [main 3521667](https://github.com/SerraKD/glimpse-of-future/commit/3521667a2dddee2f5eed470c5ac7578ea5d59720)
+
+- When user answers incorrect to the "are you ready" question, the clear terminal call at the end of the game start loop was deleting the the error message before even it is shown to user. By removing the call i resolved the issue.
+
 ## Remaining Bugs
 
 - Users can input a message before the prompt.
